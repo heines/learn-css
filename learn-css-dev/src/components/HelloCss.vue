@@ -3,10 +3,12 @@
     h1 Learn CSS
     div
       flexBox
+      halo
 </template>
 
 <script>
 import flexBox from './flexBox1';
+import halo from './halo1';
 export default {
   name: 'HelloCSS',
   data () {
@@ -14,7 +16,8 @@ export default {
     };
   },
   components: {
-    flexBox
+    flexBox,
+    halo
   }
 }
 </script>

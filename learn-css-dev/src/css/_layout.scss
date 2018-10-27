@@ -1,5 +1,7 @@
 .title {
+  margin-bottom: 0;
   font-weight: normal;
+  border-bottom: 2px solid #87cefa;
 }
 
 .dateBox {
@@ -12,6 +14,7 @@
 }
 .description {
   display: block;
+  margin: 0 auto;
 }
 
 .baseBox {
@@ -23,4 +26,8 @@
 
 .elementsDesc {
   text-align: left;
+}
+
+.baseBox{
+  margin-bottom: 20px;
 }
