@@ -1,14 +1,20 @@
 <template lang="pug">
   div.hello
     h1 Learn CSS
+    div
+      flexBox
 </template>
 
 <script>
+import flexBox from './flexBox1';
 export default {
   name: 'HelloCSS',
   data () {
     return {
-    }
+    };
+  },
+  components: {
+    flexBox
   }
 }
 </script>

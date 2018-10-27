@@ -1,0 +1,26 @@
+.title {
+  font-weight: normal;
+}
+
+.dateBox {
+}
+.date {
+  display: block;
+}
+
+.descBox {
+}
+.description {
+  display: block;
+}
+
+.baseBox {
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.elementsDesc {
+  text-align: left;
+}
