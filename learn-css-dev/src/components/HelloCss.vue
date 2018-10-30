@@ -5,12 +5,14 @@
       flexBox
       halo
       balloon
+      aboutPosition
 </template>
 
 <script>
 import flexBox from './flexBox1';
 import halo from './halo1';
 import balloon from './balloon';
+import aboutPosition from './aboutPosition'
 export default {
   name: 'HelloCSS',
   data () {
@@ -20,7 +22,8 @@ export default {
   components: {
     flexBox,
     halo,
-    balloon
+    balloon,
+    aboutPosition
   }
 }
 </script>
