@@ -1,9 +1,9 @@
 <template lang="pug">
-  div.baseBox
+  div.base-box
     h2.title halo
-    div.dateBox
+    div.date-box
       p.date 2018 Oct 28th
-    div.descBox
+    div.desc-box
       p.description
         | やりたいことをやった。
         br
@@ -12,7 +12,7 @@
       div.halo
         div.filter
           div.sun
-    div.elementsDesc
+    div.elements-desc
       dl
         dt background: radial-gradient()
           dd 円形グラデーションを指定（中心からの放射方向）

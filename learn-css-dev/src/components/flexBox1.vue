@@ -1,9 +1,9 @@
 <template lang="pug">
-  div.baseBox
+  div.base-box
     h2.title 復習1
-    div.dateBox
+    div.date-box
       p.date 2018 Oct 27th
-    div.descBox
+    div.desc-box
       p.description
         | flexboxを使用して、divの内部に等間隔に並べる。
         br
@@ -15,7 +15,7 @@
         p.innerText1 box2
       div.innerContents
         p.innerText1 box3
-    div.elementsDesc
+    div.elements-desc
       dl
         dt justify-content:space-around;
           dd 水平方向の並びを等間隔にする

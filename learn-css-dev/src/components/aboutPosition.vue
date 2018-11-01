@@ -1,9 +1,9 @@
 <template lang="pug">
-  div.baseBox
+  div.base-box
     h2.title 絶対位置・相対位置
-    div.dateBox
+    div.date-box
       p.date 2018 Oct 30th
-    div.descBox
+    div.desc-box
       p.description
         | バルーンとかやる前に、そもそもabsoluteを理解していない疑惑。
         br
@@ -13,7 +13,7 @@
         div.box2
           div.box3
             p test text
-    div.elementsDesc
+    div.elements-desc
       dl
         dt position:static
           dd デフォルト値。何も指定してないときはこれ。

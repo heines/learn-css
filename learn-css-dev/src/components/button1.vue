@@ -1,9 +1,9 @@
 <template lang="pug">
-  div.baseBox
+  div.base-box
     h2.title 復習
-    div.dateBox
+    div.date-box
       p.date 2018 Nov 1st (Oct 31st)
-    div.descBox
+    div.desc-box
       p.description aタグだけでボタンを作る
     div.contents
       div.contents-section
@@ -15,7 +15,7 @@
           a.tab_b(href="#") 2
           a.tab_a(href="#") 3
         p タブっぽいな
-    div.elementsDesc
+    div.elements-desc
       ul
         li 目新しい要素はなし。
         li 親要素display:flexにすると潰れる。（理由は不明）

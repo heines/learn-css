@@ -1,9 +1,9 @@
 <template lang="pug">
-  div.baseBox
+  div.base-box
     h2.title 予習
-    div.dateBox
+    div.date-box
       p.date 2018 Oct 30th (29th)
-    div.descBox
+    div.desc-box
       p.description
         | バルーンを表示する。以下より主要部分だけ抜き出し。
         br
@@ -17,7 +17,7 @@
       div.box
         span.tooltip.top(aria-label="balloon")
           | text hover show tooltip bottom
-    div.elementsDesc
+    div.elements-desc
       dl
         dt content: attr();
           dd 関数。指定の要素の属性の値を受け取り、スタイルシート内で使用できる。
