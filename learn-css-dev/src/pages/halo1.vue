@@ -2,9 +2,9 @@
   div.base-box
     h2.title halo
     div.date-box
-      p.date 2018 Oct 28th
+      p.date-box_text 2018 Oct 28th
     div.desc-box
-      p.description
+      p.desc-box_text
         | やりたいことをやった。
         br
         | halo : 暈

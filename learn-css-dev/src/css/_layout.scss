@@ -5,16 +5,16 @@
 }
 
 .date-box {
-}
-.date {
-  display: block;
+  &_text {
+    display: block;
+  }
 }
 
 .desc-box {
-}
-.description {
-  display: block;
-  margin: 0 auto;
+  &_text {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .base-box {

@@ -8,6 +8,7 @@
       aboutPosition
       button1
       button2
+      button3
 </template>
 
 <script>
@@ -17,6 +18,7 @@ import balloon from './balloon';
 import aboutPosition from './aboutPosition';
 import button1 from './button1';
 import button2 from './button2';
+import button3 from './button3';
 export default {
   name: 'HelloCSS',
   data () {
@@ -29,7 +31,8 @@ export default {
     balloon,
     aboutPosition,
     button1,
-    button2
+    button2,
+    button3
   }
 }
 </script>

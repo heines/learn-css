@@ -2,9 +2,9 @@
   .base-box
     h2.title 復習2
     .date-box
-      p.date 2018 Nov 2nd (1st)
+      p.date-box_text 2018 Nov 2nd (1st)
     .desc-box
-      p.description ボタンを作るその2。
+      p.desc-box_text ボタンを作るその2。
         br
         |ハンバーガーのボタンだけ作る。
         br
@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import hamburger from './hamburger';
+import hamburger from '../components/hamburger';
 export default {
   name: 'button1',
   components: {

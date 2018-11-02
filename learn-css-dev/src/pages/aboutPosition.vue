@@ -2,9 +2,9 @@
   div.base-box
     h2.title 絶対位置・相対位置
     div.date-box
-      p.date 2018 Oct 30th
+      p.date-box_text 2018 Oct 30th
     div.desc-box
-      p.description
+      p.desc-box_text
         | バルーンとかやる前に、そもそもabsoluteを理解していない疑惑。
         br
         | 丸いのがrelative、半透明の四角がabsolute

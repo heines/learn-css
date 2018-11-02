@@ -2,9 +2,9 @@
   div.base-box
     h2.title 復習
     div.date-box
-      p.date 2018 Nov 1st (Oct 31st)
+      p.date-box_text 2018 Nov 1st (Oct 31st)
     div.desc-box
-      p.description aタグだけでボタンを作る
+      p.desc-box_text aタグだけでボタンを作る
     div.contents
       div.contents-section
         a.button_a(href="#")

@@ -2,9 +2,9 @@
   div.base-box
     h2.title 復習1
     div.date-box
-      p.date 2018 Oct 27th
+      p.date-box_text 2018 Oct 27th
     div.desc-box
-      p.description
+      p.desc-box_text
         | flexboxを使用して、divの内部に等間隔に並べる。
         br
         | 両端の幅は等間隔とした幅の半分の大きさとする。

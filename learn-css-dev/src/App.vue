@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import HelloCSS from './components/HelloCSS'
+import HelloCSS from './pages/HelloCSS'
 
 export default {
   name: 'App',

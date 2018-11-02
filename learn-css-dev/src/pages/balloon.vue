@@ -2,9 +2,9 @@
   div.base-box
     h2.title 予習
     div.date-box
-      p.date 2018 Oct 30th (29th)
+      p.date-box_text 2018 Oct 30th (29th)
     div.desc-box
-      p.description
+      p.desc-box_text
         | バルーンを表示する。以下より主要部分だけ抜き出し。
         br
         | 参考:
