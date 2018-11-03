@@ -1,5 +1,6 @@
 <template lang="pug">
   div.hello
+    naviber
     h1 Learn CSS
     div
       flexBox
@@ -9,6 +10,7 @@
       button1
       button2
       button3
+      report1103
 </template>
 
 <script>
@@ -19,6 +21,8 @@ import aboutPosition from './aboutPosition';
 import button1 from './button1';
 import button2 from './button2';
 import button3 from './button3';
+import naviber from '../components/naviber';
+import report1103 from './report1103';
 export default {
   name: 'HelloCSS',
   data () {
@@ -32,7 +36,9 @@ export default {
     aboutPosition,
     button1,
     button2,
-    button3
+    button3,
+    naviber,
+    report1103
   }
 }
 </script>

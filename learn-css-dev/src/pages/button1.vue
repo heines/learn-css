@@ -34,5 +34,5 @@ export default {
 
 <style lang="scss" scoped>
 @import "../css/button1.scss";
-@import "../css/_layout.scss"
+@import "../css/Layout/_layout.scss"
 </style>
