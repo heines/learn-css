@@ -29,6 +29,7 @@ export default {
     position: sticky;
     top: 0;
     background-color: rgba(250, 250, 250, 0.5);
+    transition: 1s ease;
     &-contents {
       display: flex;
       justify-content: center;
@@ -37,14 +38,13 @@ export default {
     &_a {
       display: block;
       text-decoration: none;
-      //color: rgba(250, 250, 250, 0.5)
       font-size: 1.5em;
       color: rgba(250, 250, 250, 0.5);
+      transition: 1s ease;
     }
     &:hover {
       box-sizing: border-box;
-      border-bottom: 1px solid #CCCCCC;
-      background-color: white;
+      background-color: rgba(250, 250, 250, 1.0);
       .naviber_a {
         color: $azureblue;
       }

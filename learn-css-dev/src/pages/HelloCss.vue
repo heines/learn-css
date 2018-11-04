@@ -11,6 +11,7 @@
       button2
       button3
       report1103
+      button4
 </template>
 
 <script>
@@ -23,6 +24,7 @@ import button2 from './button2';
 import button3 from './button3';
 import naviber from '../components/naviber';
 import report1103 from './report1103';
+import button4 from './button4';
 export default {
   name: 'HelloCSS',
   data () {
@@ -38,7 +40,8 @@ export default {
     button2,
     button3,
     naviber,
-    report1103
+    report1103,
+    button4
   }
 }
 </script>
