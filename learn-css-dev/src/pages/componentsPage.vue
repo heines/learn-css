@@ -3,14 +3,9 @@
     naviber
     h1 Learn CSS
     div
-      flexBox
-      halo
-      balloon
-      aboutPosition
       button1
       button2
       button3
-      report1103
       button4
 </template>
 
