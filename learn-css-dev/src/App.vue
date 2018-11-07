@@ -1,16 +1,38 @@
 <template>
   <div id="app">
-    <HelloCSS />
+    <component :is="current" />
+    <button @click="transPage('reportPage')">report</button>
+    <button @click="transPage('componentsPage')">home</button>
+    <button @click="openErrorPage('errorPage')">error test</button>
+    <component :is="isError" />
   </div>
 </template>
 
 <script>
-import HelloCSS from './pages/HelloCSS'
+import componentsPage from './pages/componentsPage';
+import reportPage from './pages/reportPage';
+import errorPage from './pages/errorPage';
 
 export default {
   name: 'App',
   components: {
-    HelloCSS
+    componentsPage,
+    reportPage,
+    errorPage
+  },
+  data: function() {
+    return {
+      current: 'componentsPage',
+      isError: ''
+    }
+  },
+  methods: {
+    transPage : function(page){
+  		this.current = page;
+  	},
+    openErrorPage : function(page){
+  		this.isError = page;
+  	}
   }
 }
 </script>

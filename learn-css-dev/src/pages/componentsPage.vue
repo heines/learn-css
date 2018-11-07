@@ -26,7 +26,7 @@ import naviber from '../components/naviber';
 import report1103 from './report1103';
 import button4 from './button4';
 export default {
-  name: 'HelloCSS',
+  name: 'componentsPage',
   data () {
     return {
     };
