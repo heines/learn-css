@@ -1,8 +1,5 @@
 <template lang="pug">
   .base-box
-    h2.title 復習
-    .date-box
-      p.date-box_text 2018 Nov 4th / 2018 Nov 5th /  2018 Nov 6th
     .contents__large
       .contents-section__row
         a(href="").c-btn.p-btn__mdl 上に戻る
@@ -17,6 +14,8 @@
           .box__img__outer
             img(src='../assets/flower.jpg')
           p.box__p Photo by Anita Austvika on Unsplash
+      .contents-section__row
+        a(href="").c-btn.p-btn--shadow 影付き
 </template>
 
 <script>
@@ -69,6 +68,23 @@ export default {
     &:hover {
       opacity: 1;
     }
+  }
+}
+
+.p-btn--shadow {
+  height: 70px;
+  width: 150px;
+  background-color: #0060e6;
+  border-radius: 10px;
+  border-bottom: 4px solid midnightblue;
+  color: midnightblue;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+  &:active {
+    border-bottom: 0;
+    border-top: 4px solid transparent;
   }
 }
 </style>
