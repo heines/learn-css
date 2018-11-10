@@ -13,11 +13,11 @@
 </template>
 
 <script>
-export default {
-  name: 'report1103',
-}
+  export default {
+    name: 'report1103',
+  }
 </script>
 
 <style lang="scss" scoped>
-@import "../css/Layout/_layout.scss"
+  @import "../css/Layout/_layout.scss"
 </style>

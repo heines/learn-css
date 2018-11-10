@@ -1,16 +1,5 @@
 <template lang="pug">
   .base-box
-    h2.title 復習2
-    .date-box
-      p.date-box_text 2018 Nov 2nd (1st)
-    .desc-box
-      p.desc-box_text ボタンを作るその2。
-        br
-        |ハンバーガーのボタンだけ作る。
-        br
-        |今回はCSSだけじゃないのでコンポーネント化した。
-        br
-        |これでクラスのオンオフつければメニューに使える気がする。
     .contents
       .contents-section
         hamburger
@@ -26,16 +15,16 @@
 </template>
 
 <script>
-import hamburger from '../components/hamburger';
-export default {
-  name: 'button1',
-  components: {
-    hamburger
+  import hamburger from '../components/hamburger';
+  export default {
+    name: 'button1',
+    components: {
+      hamburger
+    }
   }
-}
 </script>
 
 <style lang="scss" scoped>
-@import "../css/button2.scss";
-@import "../css/Layout/_layout.scss"
+  @import "../css/button2.scss";
+  @import "../css/Layout/_layout.scss"
 </style>
