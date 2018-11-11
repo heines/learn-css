@@ -18,6 +18,8 @@
         a(href="").c-btn.p-btn--shadow 影付き
         a(href="").c-btn.p-btn--shutter
           span シャッター
+      .contents-section__row
+        a(href="").c-btn.p-btn--camera シャッター2
 </template>
 
 <script>
@@ -91,6 +93,7 @@
 
 .p-btn--shutter {
   width: 150px;
+  height: 50px;
   position: relative;
   background-color: midnightblue;
   color: white;
@@ -134,6 +137,40 @@
 .p-btn--shutter:hover:before,
 .p-btn--shutter:hover:after {
   width: 0;
-  background-color: #FFF;
+  background-color: white;
 }
+
+.p-btn--camera {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  position: relative;
+  color: midnightblue;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid midnightblue;
+  transition: .2s;
+  overflow: hidden; // はみ出た平行四辺形をhiddenする
+}
+
+.p-btn--camera:hover {
+  color: white;
+}
+
+.p-btn--camera::before { // 平行四辺形を乗せているだけ。
+  position: absolute;
+  top: 0;
+  left: -10%;
+  z-index: -1;
+  content: '';
+  width: 120%; // ベースの四角を覆えればいい大きさ
+  height: 100%;
+  background: midnightblue;
+  transform: skewX(-30deg) scale(0, 1); // 傾き。scaleはノルム
+  transition: transform .2s;
+}
+.p-btn--camera:hover::before {
+  transform: skewX(-30deg) scale(1, 1);
+}
+
 </style>
