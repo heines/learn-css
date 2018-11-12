@@ -16,10 +16,12 @@
           p.box__p Photo by Anita Austvika on Unsplash
       .contents-section__row
         a(href="").c-btn.p-btn--shadow 影付き
-        a(href="").c-btn.p-btn--shutter
-          span シャッター
+        a(href="").c-btn.p-btn--shutter シャッター
       .contents-section__row
         a(href="").c-btn.p-btn--camera シャッター2
+        a(href="").c-btn.p-btn--camera2 シャッター3
+      .contents-section__row
+        a(href="").c-btn.p-btn--camera3 シャッター4
 </template>
 
 <script>
@@ -95,49 +97,30 @@
   width: 150px;
   height: 50px;
   position: relative;
-  background-color: midnightblue;
-  color: white;
+  color: midnightblue;
   font-weight: bold;
   border-radius: 10px;
-}
-
-.p-btn--shutter span {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: midnightblue;
-  z-index: 1;
+  overflow: hidden;
   &:hover {
     color: white;
   }
 }
 
-.p-btn--shutter::before,
-.p-btn--shutter::after {
-  width: 50%;
+.p-btn--shutter::before {
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
-  content: "";
+  content: '';
   display: block;
-  color: midnightblue;
-  background-color: #FFF;
-  transition: .5s;
-}
-.p-btn--shutter::before {
-  left: 0;
-}
-.p-btn--shutter::after {
-  right: 0;
+  z-index: -1;
+  background-color: midnightblue;
+  transition: .2s;
+  transform: scale(0, 1);
 }
 
-.p-btn--shutter:hover:before,
-.p-btn--shutter:hover:after {
-  width: 0;
-  background-color: white;
+.p-btn--shutter:hover:before {
+  transform: scale(1, 1);
 }
 
 .p-btn--camera {
@@ -149,6 +132,7 @@
   font-weight: bold;
   text-decoration: none;
   border: 2px solid midnightblue;
+  box-sizing: border-box;
   transition: .2s;
   overflow: hidden; // はみ出た平行四辺形をhiddenする
 }
@@ -158,19 +142,101 @@
 }
 
 .p-btn--camera::before { // 平行四辺形を乗せているだけ。
+  width: 120%; // ベースの四角を覆えればいい大きさ
+  height: 100%;
   position: absolute;
   top: 0;
   left: -10%;
   z-index: -1;
   content: '';
-  width: 120%; // ベースの四角を覆えればいい大きさ
-  height: 100%;
   background: midnightblue;
   transform: skewX(-30deg) scale(0, 1); // 傾き。scaleはノルム
   transition: transform .2s;
 }
 .p-btn--camera:hover::before {
   transform: skewX(-30deg) scale(1, 1);
+}
+
+.p-btn--camera2 {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  position: relative;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .2s;
+  overflow: hidden; // はみ出た平行四辺形をhiddenする
+}
+
+.p-btn--camera2:hover {
+  color: midnightblue;
+}
+
+.p-btn--camera2::before { // 平行四辺形を乗せているだけ。
+  width: 120%; // ベースの四角を覆えればいい大きさ
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -10%;
+  z-index: -1;
+  content: '';
+  background-color: midnightblue;
+  transform: skewX(30deg) scale(1, 1); // 傾き。scaleはノルム
+  transition: transform .2s;
+}
+.p-btn--camera2:hover::before {
+  transform: skewX(30deg) scale(0, 1);
+}
+
+.p-btn--camera3 {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  position: relative;
+  color: midnightblue;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .2s;
+  overflow: hidden; // はみ出た平行四辺形をhiddenする
+}
+
+.p-btn--camera3:hover {
+  color: white;
+}
+
+.p-btn--camera3::before { // 平行四辺形を乗せているだけ。
+  width: 120%; // ベースの四角を覆えればいい大きさ
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -20%;
+  z-index: -1;
+  content: '';
+  background-color: midnightblue;
+  transform-origin: left;
+  transform: skewX(-30deg) scale(0, 1); // 傾き。scaleはノルム
+  transition: transform .2s;
+}
+.p-btn--camera3:hover::before {
+  transform: skewX(-120deg) scale(0.7, 1);
+}
+
+.p-btn--camera3::after { // 平行四辺形を乗せているだけ。
+  width: 120%; // ベースの四角を覆えればいい大きさ
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -20%;
+  z-index: -1;
+  content: '';
+  background-color: midnightblue;
+  transform-origin: right;
+  transform: skewX(-30deg) scale(0, 1); // 傾き。scaleはノルム
+  transition: transform .2s;
+}
+.p-btn--camera3:hover::after {
+  transform: skewX(-120deg) scale(0.7, 1);
 }
 
 </style>
