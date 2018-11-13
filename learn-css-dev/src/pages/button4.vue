@@ -22,6 +22,11 @@
         a(href="").c-btn.p-btn--camera2 シャッター3
       .contents-section__row
         a(href="").c-btn.p-btn--camera3 シャッター4
+      .contents-section__row
+        p 星を描いたが汚い。
+        .star
+          .star__1
+          .star__2
 </template>
 
 <script>
@@ -238,5 +243,112 @@
 .p-btn--camera3:hover::after {
   transform: skewX(-120deg) scale(0.7, 1);
 }
+
+.star {
+  position: relative;
+  width: 74px;
+  margin-top: 45px;
+  box-sizing: content-box;
+  border-width: 69px 23px 0;
+  border-style: solid;
+  border-color: midnightblue transparent;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    // top: -95px;
+    top: -111px;
+    left: -22px;
+    border-width: 0 59px 42px;
+    border-style: solid;
+    border-color: transparent transparent midnightblue;
+  }
+  &::after {
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    border-bottom: 10px solid white;
+    border-top: 10px solid transparent;
+    border-left: 37px solid transparent;
+    border-right: 37px solid transparent;
+  }
+}
+
+.star__1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  &::before {
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 72px;
+    left: 24px;
+    content: '';
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid white;
+    border-left: 37px solid transparent;
+    border-right: 37px solid transparent;
+    transform: rotate(36deg);
+  }
+  &::after {
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    content: '';
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid white;
+    border-left: 37px solid transparent;
+    border-right: 37px solid transparent;
+    transform-origin: right;
+    transform: rotate(108deg);
+  }
+}
+
+.star__2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  &::before {
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 72px;
+    left: -24px;
+    content: '';
+    border-bottom: 10px solid white;
+    border-top: 10px solid transparent;
+    border-left: 37px solid transparent;
+    border-right: 37px solid transparent;
+    transform: rotate(144deg);
+  }
+  &::after {
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -10px;
+    left: -64px;
+    content: '';
+    border-bottom: 10px solid white;
+    border-top: 10px solid transparent;
+    border-left: 37px solid transparent;
+    border-right: 37px solid transparent;
+    transform-origin: right;
+    transform: rotate(72deg);
+  }
+}
+
 
 </style>
