@@ -27,14 +27,21 @@
         .star
           .star__1
           .star__2
+      .contents-section__row
+        p ポップアップブロックはclickイベントにすることで回避できる（らしい）
+        lineShare
 </template>
 
 <script>
+  import lineShare from '../components/lineShare';
   export default {
     name: 'button4',
     data () {
       return {
       }
+    },
+    components: {
+      lineShare
     }
   }
 </script>
