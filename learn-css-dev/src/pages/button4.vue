@@ -28,8 +28,15 @@
           .star__1
           .star__2
       .contents-section__row
-        p ポップアップブロックはclickイベントにすることで回避できる（らしい）
+        p
+          |ポップアップブロックはclickイベントにすることで回避できる。
+          br
+          |clickイベントで『直接』操作するのが肝要。
+          br
+          |promiseとか途中でかますとブロックに引っかかる。
         lineShare
+      .contents-section__row
+        a.p-btn--bgimage(href="https://heines.github.io/learn-css/")
 </template>
 
 <script>
@@ -357,5 +364,32 @@
   }
 }
 
+.p-btn--bgimage {
+  width: 200px;
+  height: 170px;
+  display: block;
+  position: relative;
+  background-image: url('../assets/flower.jpg');
+  background-size: cover;
+  transition-duration: .3s;
+  transition-timing-function:ease-out;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.p-btn--bgimage:before {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  content: 'test';
+  top: 20px;
+  right: -10px;
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+}
 
 </style>
