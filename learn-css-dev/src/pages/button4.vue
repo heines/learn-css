@@ -36,7 +36,11 @@
           |promiseとか途中でかますとブロックに引っかかる。
         lineShare
       .contents-section__row
+        p スマホからだと背景画像が見えない。なんでだろう。
         a.p-btn--bgimage(href="https://heines.github.io/learn-css/")
+      .contents-section__row
+        a.p-btn--tagImage(href="https://heines.github.io/learn-css/")
+          |逆はどうだろう
 </template>
 
 <script>
@@ -390,6 +394,34 @@
   right: -10px;
   background-color: rgba(0,0,0,0.3);
   color: white;
+}
+
+.p-btn--tagImage {
+  width: 200px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  background-color: #87cefa;
+  color: white;
+  transition-duration: .3s;
+  transition-timing-function:ease-out;
+  &:hover {
+    opacity: 0.8;
+  }
+  &::before {
+    width: 100px;
+    height: 80px;
+    display: block;
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    right: -10px;
+    background-image: url('../assets/flower.jpg');
+    background-size: cover;
+  }
 }
 
 </style>
