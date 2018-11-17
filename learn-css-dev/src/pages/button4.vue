@@ -39,6 +39,10 @@
         p スマホからだと背景画像が見えない。なんでだろう。
         a.p-btn--bgimage(href="https://heines.github.io/learn-css/")
       .contents-section__row
+        p
+          |url()の解釈が実際と異なるのが原因。相対パスでやりたいけど無理か。
+          br
+          |方法は別途考える。どうしてたっけ
         a.p-btn--tagImage(href="https://heines.github.io/learn-css/")
           |逆はどうだろう
 </template>
