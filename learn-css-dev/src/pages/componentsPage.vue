@@ -7,6 +7,7 @@
       button2
       button3
       button4
+      novel
 </template>
 
 <script>
@@ -20,6 +21,7 @@
   import naviber from '../components/naviber';
   import report1103 from './report1103';
   import button4 from './button4';
+  import novel from '../components/novel';
   export default {
     name: 'componentsPage',
     data () {
@@ -36,7 +38,8 @@
       button3,
       naviber,
       report1103,
-      button4
+      button4,
+      novel
     }
   }
 </script>

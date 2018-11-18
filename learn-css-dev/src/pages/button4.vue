@@ -44,7 +44,7 @@
           br
           |方法は別途考える。どうしてたっけ
         a.p-btn--tagImage(href="https://heines.github.io/learn-css/")
-          |逆はどうだろう
+          |パスを変える必要性。
 </template>
 
 <script>
