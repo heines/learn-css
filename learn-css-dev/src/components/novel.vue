@@ -62,6 +62,7 @@ export default {
     &::first-letter {
       text-indent: 1em;
       margin-right: 0.1em;
+      color: midnightblue;
       font-size: 3em;
       line-height: 1;
       float: left;
