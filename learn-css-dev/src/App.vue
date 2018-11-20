@@ -4,6 +4,7 @@
     div.menu
       div.menu__btn(@click="transPage('reportPage')") report
       div.menu__btn(@click="transPage('componentsPage')") home
+      div.menu__btn(@click="transPage('laboPage')") labo
       div.menu__btn(@click="openErrorPage('errorPage')") error
     component(:is="current")
 </template>
@@ -11,6 +12,7 @@
 <script>
 import componentsPage from './pages/componentsPage';
 import reportPage from './pages/reportPage';
+import laboPage from './pages/laboPage';
 import errorPage from './pages/errorPage';
 
 export default {
@@ -18,6 +20,7 @@ export default {
   components: {
     componentsPage,
     reportPage,
+    laboPage,
     errorPage
   },
   data: function() {

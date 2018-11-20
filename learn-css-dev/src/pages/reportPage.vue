@@ -1,6 +1,5 @@
 <template lang="pug">
   div
-    naviber
     h2 report
     div
       report1104

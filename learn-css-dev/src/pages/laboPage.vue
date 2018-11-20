@@ -1,0 +1,34 @@
+<template lang="pug">
+  .hello
+    h2 labo
+    novel
+    proverb
+    graph
+</template>
+
+<script>
+  import novel from '../components/novel';
+  import proverb from '../components/proverb';
+  import graph from '../components/graph';
+  import shobon from '../components/shobon';
+  export default {
+    name: 'componentsPage',
+    data () {
+      return {
+      };
+    },
+    components: {
+      novel,
+      proverb,
+      shobon,
+      graph
+    }
+  }
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="scss" scoped>
+  h1, h2 {
+    font-weight: normal;
+  }
+</style>
