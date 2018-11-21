@@ -1,8 +1,12 @@
 <template lang="pug">
   .hello
+    markers
     h2 labo
     novel
     proverb
+    graph
+    graph
+    graph
     graph
 </template>
 
@@ -11,6 +15,7 @@
   import proverb from '../components/proverb';
   import graph from '../components/graph';
   import shobon from '../components/shobon';
+  import markers from '../components/marker';
   export default {
     name: 'componentsPage',
     data () {
@@ -21,7 +26,8 @@
       novel,
       proverb,
       shobon,
-      graph
+      graph,
+      markers
     }
   }
 </script>
