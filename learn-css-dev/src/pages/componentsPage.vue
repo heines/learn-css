@@ -7,6 +7,7 @@
       button2
       button3
       button4
+      graph
 </template>
 
 <script>
@@ -20,6 +21,7 @@
   import naviber from '../components/naviber';
   import report1103 from './report1103';
   import button4 from './button4';
+  import graph from '../components/graph';
   export default {
     name: 'componentsPage',
     data () {
@@ -37,6 +39,7 @@
       naviber,
       report1103,
       button4,
+      graph,
     }
   }
 </script>

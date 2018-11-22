@@ -1,19 +1,25 @@
 <template lang="pug">
   .c-marker
-    .c-marker__background
+    .c-marker__background(:class='{active: isActive}')
     .c-marker__tag
       .c-marker__line
-      .c-marker__element
+      .c-marker__element(@mouseup='braided')
 </template>
 
 <script>
-export default {
-  name: 'marker',
-  data () {
-    return {
+  export default {
+    name: 'lightSwitch',
+    data () {
+      return {
+        isActive: false
+      }
+    },
+    methods: {
+      braided: function() {
+        (this.isActive === true ? this.isActive = false : this.isActive = true);
+      }
     }
   }
-}
 </script>
 
 <style lang="scss" scoped>
@@ -38,6 +44,10 @@ export default {
       width: 100vw;
       height: 100vh;
       background-color: transparent;
+      &.active {
+        background-color: transparentize(black, 0.5);
+        z-index: 2;
+      }
     }
     &__element {
       width: 24px;
@@ -48,6 +58,7 @@ export default {
       border-radius: 13px;
       background-color: midnightblue;
       transition: .5s ease;
+      z-index:3;
       &:hover {
         background-color: #b3b3ff;
         box-sizing: border-box;
@@ -56,9 +67,6 @@ export default {
       }
       &:active {
         bottom: 44px;
-        // .c-marker__background{
-        //   background-color: transparentize(black, 0.5);
-        // } //子から親はjavascriptで変える。
       }
     }
   }

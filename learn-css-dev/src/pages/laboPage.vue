@@ -1,21 +1,16 @@
 <template lang="pug">
   .hello
-    markers
+    lightSwitch
     h2 labo
     novel
     proverb
-    graph
-    graph
-    graph
-    graph
 </template>
 
 <script>
   import novel from '../components/novel';
   import proverb from '../components/proverb';
-  import graph from '../components/graph';
   import shobon from '../components/shobon';
-  import markers from '../components/marker';
+  import lightSwitch from '../components/lightSwitch';
   export default {
     name: 'componentsPage',
     data () {
@@ -26,8 +21,7 @@
       novel,
       proverb,
       shobon,
-      graph,
-      markers
+      lightSwitch
     }
   }
 </script>
