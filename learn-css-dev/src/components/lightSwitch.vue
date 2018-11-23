@@ -1,9 +1,9 @@
 <template lang="pug">
   .c-marker
-    .c-marker__background(:class='{active: isActive}')
+    .c-marker__background(:class='{active: isBraided}')
     .c-marker__tag
       .c-marker__line
-      .c-marker__element(@mouseup='braided')
+      .c-marker__element(:class='{rise: isBraided}' @mouseup='braided')
 </template>
 
 <script>
@@ -11,12 +11,12 @@
     name: 'lightSwitch',
     data () {
       return {
-        isActive: false
+        isBraided: false
       }
     },
     methods: {
       braided: function() {
-        (this.isActive === true ? this.isActive = false : this.isActive = true);
+        (this.isBraided === true ? this.isBraided = false : this.isBraided = true);
       }
     }
   }
@@ -59,6 +59,9 @@
       background-color: midnightblue;
       transition: .5s ease;
       z-index:3;
+      &.rise {
+        background-color: #b3b3ff;
+      }
       &:hover {
         background-color: #b3b3ff;
         box-sizing: border-box;
