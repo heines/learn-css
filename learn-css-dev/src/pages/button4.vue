@@ -45,6 +45,12 @@
           |方法は別途考える。どうしてたっけ
         a.p-btn--tagImage(href="https://heines.github.io/learn-css/")
           |パスを変える必要性。
+      .contents-section__row
+        a.p-btn__biscuit(href='')
+          |オレオ
+          br
+          |食べたい
+        p 外側はshadowで実装
 </template>
 
 <script>
@@ -426,6 +432,21 @@
     background-image: url('../assets/flower.jpg');
     background-size: cover;
   }
+}
+
+.p-btn__biscuit {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #60452E;
+  box-shadow: 0px 0px 0px 8px #60452E;
+  border: dashed 1px #BB9471;
+  text-decoration: none;
+  color: white;
 }
 
 </style>
