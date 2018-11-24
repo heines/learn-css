@@ -51,6 +51,9 @@
           br
           |食べたい
         p 外側はshadowで実装
+      .contents-section__row
+        a.p-btn__cookie(href='')
+          |クッキー
 </template>
 
 <script>
@@ -444,7 +447,22 @@
   border-radius: 50%;
   background-color: #60452E;
   box-shadow: 0px 0px 0px 8px #60452E;
-  border: dashed 1px #BB9471;
+  border: 1px dashed #BB9471;
+  text-decoration: none;
+  color: white;
+}
+
+.p-btn__cookie {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #BB9471;
+  box-shadow: 0px 0px 0px 8px #BB9471;
+  border: 5px dotted #A37A56;
   text-decoration: none;
   color: white;
 }
