@@ -54,6 +54,9 @@
       .contents-section__row
         a.p-btn__cookie(href='')
           |クッキー
+      .contents-section__row
+        .p-btn__bite
+          |改良の余地あり
 </template>
 
 <script>
@@ -444,12 +447,56 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 50%;
   background-color: #60452E;
   box-shadow: 0px 0px 0px 8px #60452E;
-  border: 1px dashed #BB9471;
+  border: 1px dashed #443121;
   text-decoration: none;
-  color: white;
+  text-shadow:#7B583B 0 0 2px;
+  color: #443121;
+  font-weight: bold;
+  font-size: 1.2em;
+  &::before, &::after {
+    transition-duration: .5s;
+    transition-timing-function: ease;
+  }
+  &::before {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: -1px;
+    top: 0;
+    content: '';
+    border-radius: 50%;
+    background-color: #60452E;
+    box-shadow: 0px 0px 0px 8px #60452E;
+    border: 1px dashed #60452E;
+    z-index: -2;
+  }
+  &::after {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #60452E;
+    z-index: -1;
+  }
+  &:hover {
+    @at-root #{&}::before, #{&}::after{
+      left: -40px;
+    }
+  }
+  &:active {
+    @at-root #{&}::after{
+      background-color: transparentize(white, 0.5);
+    }
+  }
 }
 
 .p-btn__cookie {
@@ -459,12 +506,53 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 50%;
   background-color: #BB9471;
   box-shadow: 0px 0px 0px 8px #BB9471;
   border: 5px dotted #A37A56;
   text-decoration: none;
   color: white;
+}
+
+.p-btn__bite {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: #BB9471;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  box-sizing: border-box;
+  overflow: hidden;
+  &::before {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    content: '';
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px dotted #A37A56;
+  }
+  &::after {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    content: '';
+    border-radius: 50%;
+    background-color: white;
+  }
 }
 
 </style>
