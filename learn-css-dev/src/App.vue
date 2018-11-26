@@ -5,7 +5,8 @@
       div.menu__btn(@click="transPage('reportPage')") report
       div.menu__btn(@click="transPage('componentsPage')") home
       div.menu__btn(@click="transPage('laboPage')") labo
-      div.menu__btn(@click="openErrorPage('errorPage')") error
+      div.menu__btn(@click="transPage('bgImages')") bg
+      div.menu__btn(@click="openErrorPage('bgimages')") error
     component(:is="current")
 </template>
 
@@ -14,6 +15,7 @@ import componentsPage from './pages/componentsPage';
 import reportPage from './pages/reportPage';
 import laboPage from './pages/laboPage';
 import errorPage from './pages/errorPage';
+import bgImages from './pages/bgimages';
 
 export default {
   name: 'App',
@@ -21,6 +23,7 @@ export default {
     componentsPage,
     reportPage,
     laboPage,
+    bgImages,
     errorPage
   },
   data: function() {
