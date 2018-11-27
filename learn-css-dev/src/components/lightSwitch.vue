@@ -1,9 +1,9 @@
 <template lang="pug">
-  .c-marker
-    .c-marker__background(:class='{active: isBraided}')
-    .c-marker__tag
-      .c-marker__line
-      .c-marker__element(:class='{rise: isBraided}' @mouseup='braided')
+  .p-marker
+    .p-marker__background(:class='{active: isBraided}')
+    .p-marker__tag
+      .p-marker__line
+      .p-marker__element(:class='{rise: isBraided}' @mouseup='braided')
 </template>
 
 <script>
@@ -23,7 +23,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .c-marker {
+  .p-marker {
     &__tag {
       width: 50px;
       height: 50vh;

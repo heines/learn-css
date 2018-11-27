@@ -37,6 +37,45 @@
 </script>
 
 <style lang="scss" scoped>
-@import "../css/aboutPosition.scss";
-@import "../css/Layout/_layout.scss"
+@import "../css/Layout/_layout.scss";
+
+.contents {
+  width: 500px;
+  height: 300px;
+  margin: 20px;
+  border: 1px solid #CCCCCC;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: #87cefa;
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 20px;
+  top: 30px;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  content: "test";
+  left: 25px;
+  top: 25px;
+  color: black;
+  background-color: rgba(144, 144, 144, 0.5);
+}
+
+.inner-absolute {
+  display: block;
+}
+
 </style>

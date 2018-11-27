@@ -1,6 +1,6 @@
 <template lang="pug">
-  .c-graph
-    .c-graph__half
+  .p-graph
+    .p-graph__half
 </template>
 
 <script>
@@ -16,7 +16,7 @@ export default {
 
 <style lang="scss" scoped>
   @import '../css/_variables.scss';
-  .c-graph {
+  .p-graph {
     width: 100px;
     height: 100px;
     position: relative;
@@ -60,7 +60,7 @@ export default {
       }
     }
   }
-  .c-graph__half {
+  .p-graph__half {
     width: 60px;
     height: 60px;
     position: absolute;

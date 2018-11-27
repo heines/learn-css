@@ -1,5 +1,5 @@
 <template lang="pug">
-  .c-ripple
+  .p-ripple
 </template>
 
 <script>
@@ -15,7 +15,7 @@ export default {
 
 <style lang="scss" scoped>
   @import '../css/_variables.scss';
-  .c-ripple {
+  .p-ripple {
     width: 200px;
     height: 200px;
     position: relative;

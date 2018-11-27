@@ -7,12 +7,21 @@
 }
 
 /* tooltip */
-.tooltip {
+.p-tooltip {
   margin: auto;
   position: relative;
-}
-
-.tooltip:after {
+  &::before { // 吹き出しの三角
+    position: absolute;
+    z-index: 2;
+    display: none;
+    width: 0;
+    height: 0;
+    content: '';
+    opacity: 0;
+    color: rgba(0, 0, 0, .5);
+    border: 5px solid transparent;
+  }
+  &::after { // 吹き出しの三角
     position: absolute;
     z-index: 1;
     display: none;
@@ -23,69 +32,29 @@
     color: #fff;
     border-radius: 3px;
     background-color: rgba(255, 0, 0, .5);
-}
-
-// 吹き出しの三角
-.tooltip:before {
-    position: absolute;
-    z-index: 2;
-    display: none;
-    width: 0;
-    height: 0;
-    content: '';
-    opacity: 0;
-    color: rgba(0, 0, 0, .5);
-    border: 5px solid transparent;
-}
-
-.tooltip:hover:before,
-.tooltip:hover:after,
-.tooltip:active:before,
-.tooltip:active:after,
-.tooltip:focus:before,
-.tooltip:focus:after
-{
+  }
+  &:hover::before, &:hover::after,
+  &:active::before, &:active::after,
+  &:focus::before, &:focus::after {
     display: inline-block;
     animation-name: fadein;
     animation-duration: .4s;
     opacity: 1;
-}
-
-.tooltip.top:after,
-.tooltip.top-left:after,
-.tooltip.top-right:after
-{
-    right: 50%;
+  }
+  &__top:after {
+    right: 0;
+    left: 0;
     bottom: 100%;
     margin-bottom: 4px;
-}
-
-.tooltip.top:before,
-.tooltip.top-left:before,
-.tooltip.top-right:before
-{
+  }
+  &__top:before {
     top: -4px;
     right: 50%;
     bottom: auto;
     margin-right: -5px;
     border-top-color: rgba(255, 0, 0, .5);
+  }
 }
-
-.tooltip.top-right:after {
-    right: auto;
-    left: 50%;
-    margin-left: -15px;
-}
-
-.tooltip.top-left:after {
-    margin-right: -15px;
-}
-
-.tooltip.top:after {
-    right: 0;
-    left: 0;
-}
-
 
 /* animation */
 @-webkit-keyframes fadein {

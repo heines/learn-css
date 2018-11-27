@@ -2,7 +2,7 @@
   .base-box
     .contents
       .box
-        span.tooltip.top(aria-label="balloon")
+        span.p-tooltip.p-tooltip__top(aria-label="balloon")
           | text hover show tooltip bottom
     .elements-desc
       dl
@@ -23,6 +23,6 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "../css/balloon.scss";
+  @import "../css/Object/Project/_balloon.scss";
   @import "../css/Layout/_layout.scss"
 </style>

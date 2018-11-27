@@ -1,8 +1,8 @@
 <template lang="pug">
-  .c-shobon
-    .c-shobon__contours
-      .c-shobon__hand--left
-      .c-shobon__hand--right
+  .p-shobon
+    .p-shobon__contours
+      .p-shobon__hand--left
+      .p-shobon__hand--right
 </template>
 
 <script>
@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss" scoped>
   @import '../css/_variables.scss';
-  .c-shobon {
+  .p-shobon {
     padding-left: 20px;
     &__contours {
       width: 180px;

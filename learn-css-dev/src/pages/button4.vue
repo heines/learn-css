@@ -38,10 +38,7 @@
       .contents-section__row
         a.c-btn.p-btn--bgimage(href="https://heines.github.io/learn-css/")
       .contents-section__row
-        p
-          |url()の解釈が実際と異なるのが原因。相対パスでやりたいけど無理か。
-          br
-          |方法は別途考える。どうしてたっけ
+        p 画像が見えないのはurl()の解釈が実際と異なるのが原因。
         a.c-btn.p-btn--tagImage(href="https://heines.github.io/learn-css/")
           |パスを変える必要性。
       .contents-section__row
@@ -55,7 +52,7 @@
           |クッキー
       .contents-section__row
         .p-bite
-          |改良の余地あり
+          |はらへ
 </template>
 
 <script>

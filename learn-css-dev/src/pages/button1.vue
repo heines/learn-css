@@ -1,24 +1,13 @@
 <template lang="pug">
   .base-box
-    h2.title 復習
-    .date-box
-      p.date-box_text 2018 Nov 1st (Oct 31st)
-    .desc-box
-      p.desc-box_text aタグだけでボタンを作る
     .contents
       .contents-section
         a.button_a(href="#")
-        p ボタンらしいって難しい
       .contents-section
-        .tab_set
-          a.tab_a(href="#") 1
-          a.tab_b(href="#") 2
-          a.tab_a(href="#") 3
-        p タブっぽいな
-    .elements-desc
-      ul
-        li 目新しい要素はなし。
-        li 親要素display:flexにすると潰れる。（理由は不明）
+        .tab-menu
+          a.tab-menu__a(href="#") 1
+          a.tab-menu__b(href="#") 2
+          a.tab-menu__a(href="#") 3
 </template>
 
 <script>
@@ -32,6 +21,20 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "../css/button1.scss";
-  @import "../css/Layout/_layout.scss"
+  @import '../css/Layout/_layout.scss';
+  @import '../css/Object/Project/_tab.scss';
+  @import '../css/Object/Project/_btn.scss';
+  .contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+    padding: 50px;
+  }
+
+  .contents-section {
+    margin: 10px 0;
+  }
 </style>

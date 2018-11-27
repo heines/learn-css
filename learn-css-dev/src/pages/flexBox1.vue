@@ -37,6 +37,31 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../css/flexbox1.scss";
-@import "../css/Layout/_layout.scss"
+@import "../css/Layout/_layout.scss";
+
+.contents {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  margin: 20px;
+  width: 500px;
+  height: 100px;
+  border: 1px solid #CCCCCC;
+}
+
+.innerContents {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 100px;
+  height: 70px;
+  border: 1px solid #87cefa;
+  background: #87cefa;
+  color: white;
+  font-weight: bold;
+}
+
+.innerText1 {
+  display: block;
+}
 </style>
