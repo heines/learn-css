@@ -1,12 +1,12 @@
 <template lang="pug">
   #app
     component(:is="isError")
-    div.menu
-      div.menu__btn(@click="transPage('reportPage')") report
-      div.menu__btn(@click="transPage('componentsPage')") home
-      div.menu__btn(@click="transPage('laboPage')") labo
-      div.menu__btn(@click="transPage('bgImages')") bg
-      div.menu__btn(@click="openErrorPage('bgimages')") error
+    .menu
+      .menu__btn(@click="transPage('reportPage')") report
+      .menu__btn(@click="transPage('componentsPage')") home
+      .menu__btn(@click="transPage('laboPage')") labo
+      .menu__btn(@click="transPage('bgImages')") bg
+      .menu__btn(@click="openErrorPage('errorPage')") error
     component(:is="current")
 </template>
 
