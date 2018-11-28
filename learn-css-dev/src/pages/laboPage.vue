@@ -1,7 +1,6 @@
 <template lang="pug">
   .hello
     lightSwitch
-    h2 labo
     novel
     proverb
 </template>

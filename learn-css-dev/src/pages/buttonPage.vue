@@ -1,11 +1,10 @@
 <template lang="pug">
   .hello
     naviber
-    h1 Learn CSS
     tabmenu
     hamburger
     ripple
-    button4
+    buttons
 </template>
 
 <script>
@@ -13,9 +12,9 @@
   import hamburger from '../components/hamburger';
   import naviber from '../components/naviber';
   import ripple from '../components/ripple';
-  import button4 from './button4';
+  import buttons from './buttons';
   export default {
-    name: 'componentsPage',
+    name: 'buttonPage',
     data () {
       return {
       };
@@ -25,7 +24,7 @@
       tabmenu,
       ripple,
       naviber,
-      button4,
+      buttons,
     }
   }
 </script>

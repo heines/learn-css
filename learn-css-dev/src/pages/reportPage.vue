@@ -1,6 +1,5 @@
 <template lang="pug">
   div
-    h2 report
     report1104
     aboutPosition
     report1103
@@ -11,7 +10,6 @@
 <script>
   import flexBox from './flexBox1';
   import halo from './halo1';
-  import balloon from './balloon';
   import aboutPosition from './aboutPosition';
   import report1103 from './report1103';
   import report1104 from './report1104';
@@ -24,7 +22,6 @@
     components: {
       flexBox,
       halo,
-      balloon,
       aboutPosition,
       report1103,
       report1104

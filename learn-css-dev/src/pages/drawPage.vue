@@ -1,6 +1,5 @@
 <template lang="pug">
   div
-    h2 draw
     star
     graph
 </template>
