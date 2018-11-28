@@ -1,0 +1,112 @@
+.p-biscuit {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: #60452E;
+  box-shadow: 0px 0px 0px 8px #60452E;
+  border: 1px dashed #443121;
+  text-shadow:#7B583B 0 0 2px;
+  color: #443121;
+  font-weight: bold;
+  font-size: 1.2em;
+  &::before, &::after {
+    transition-duration: .5s;
+    transition-timing-function: ease;
+  }
+  &::before {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: -1px;
+    top: 0;
+    content: '';
+    border-radius: 50%;
+    background-color: #60452E;
+    box-shadow: 0px 0px 0px 8px #60452E;
+    border: 1px dashed #60452E;
+    z-index: -2;
+  }
+  &::after {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #60452E;
+    z-index: -1;
+  }
+  &:hover {
+    @at-root #{&}::before, #{&}::after{
+      left: -40px;
+    }
+  }
+  &:active {
+    @at-root #{&}::after{
+      background-color: transparentize(white, 0.5);
+    }
+  }
+}
+
+.p-cookie {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: #BB9471;
+  box-shadow: 0px 0px 0px 8px #BB9471;
+  border: 5px dotted #A37A56;
+  color: white;
+}
+
+.p-bite {
+  &__outer {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+  }
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: #BB9471;
+  color: white;
+  &::before {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    content: '';
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px dotted #A37A56;
+  }
+  &::after {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    content: '';
+    border-radius: 50%;
+    background-color: white;
+    transition-duration: .5s;
+    transition-timing-function: steps(3);
+  }
+  &:hover {
+    &::after{
+      top: -50px;
+    }
+  }
+}

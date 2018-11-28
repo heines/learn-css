@@ -1,11 +1,8 @@
-.p-box {
-  border: 1px solid #eee;
-}
-
 /* tooltip */
 .p-tooltip {
-  margin: auto;
   position: relative;
+  padding: 10px;
+  border: 1px solid #eee;
   &::before { // 吹き出しの三角
     position: absolute;
     z-index: 2;
@@ -22,7 +19,7 @@
     z-index: 1;
     display: none;
     padding: 5px 8px;
-    content: attr(aria-label);
+    content: attr(label);
     text-align: center;
     opacity: 0;
     color: #fff;

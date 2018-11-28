@@ -2,15 +2,15 @@
   .base-box
     .contents__large
       .contents-section__row
-        span.p-tooltip.p-tooltip__top(aria-label="balloon")
+        a.c-btn.p-tooltip.p-tooltip__top(label="balloon" href="#")
           | text hover show tooltip bottom
-      .contents-section__row
-        a.button_a(href="#")
+        a.p-btn-round(href="#")
       .contents-section__row
         a(href="").c-btn.p-middle-btn 上に戻る
         a(href="").c-btn.p-small-btn 上
         a(href="").c-btn.p-triangle-btn 上
-        a(href="").c-btn.p-middle-cross-btn 上に戻る
+        .p-middle-cross-btn__outer
+          a(href="").c-btn.p-middle-cross-btn 上に戻る
         a(href="").c-btn.p-middle-bar-btn 上に戻る
       .contents-section__row
         a(href="").c-btn.p-shadow-btn 影付き
@@ -36,7 +36,7 @@
           |食べたい
         a.c-btn.p-cookie(href='')
           |クッキー
-        .p-bite
+        .c-btn.p-bite(href='')
           |はらへ
 </template>
 
@@ -57,7 +57,9 @@
 <style lang="scss" scoped>
   @import '../css/Object/Component/_btn.scss';
   @import '../css/Object/Project/_btn.scss';
-  @import "../css/Object/Project/_balloon.scss";
-  @import "../css/Object/Project/_image-box.scss";
+  @import '../css/Object/Project/_btn-small.scss';
+  @import '../css/Object/Project/_balloon.scss';
+  @import '../css/Object/Project/_image-box.scss';
+  @import '../css/Object/Project/_cookie.scss';
   @import '../css/Layout/_layout.scss';
 </style>
