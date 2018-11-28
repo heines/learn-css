@@ -40,11 +40,14 @@ export default {
 }
 .p-novel__title {
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding-left: 1em;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 .p-novel__name {
   font-size: 0.9em;
   text-align: right;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .p-novel__story {

@@ -3,6 +3,7 @@
     lightSwitch
     novel
     proverb
+    bgText
 </template>
 
 <script>
@@ -10,6 +11,8 @@
   import proverb from '../components/proverb';
   import shobon from '../components/shobon';
   import lightSwitch from '../components/lightSwitch';
+  import bgText from '../components/bgText';
+
   export default {
     name: 'componentsPage',
     data () {
@@ -20,7 +23,8 @@
       novel,
       proverb,
       shobon,
-      lightSwitch
+      lightSwitch,
+      bgText
     }
   }
 </script>

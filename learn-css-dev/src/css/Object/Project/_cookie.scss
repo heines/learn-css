@@ -8,10 +8,10 @@
   background-color: #60452E;
   box-shadow: 0px 0px 0px 8px #60452E;
   border: 1px dashed #443121;
-  text-shadow:#7B583B 0 0 2px;
   color: #443121;
+  font-size: 1.5em;
   font-weight: bold;
-  font-size: 1.2em;
+  text-shadow:#7B583B 0 0 2px;
   &::before, &::after {
     transition-duration: .5s;
     transition-timing-function: ease;
@@ -70,7 +70,6 @@
   &__outer {
     width: 160px;
     height: 160px;
-    position: relative;
     overflow: hidden;
   }
   width: 150px;
@@ -80,7 +79,10 @@
   margin-bottom: 10px;
   border-radius: 50%;
   background-color: #BB9471;
-  color: white;
+  color: #A37A56;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   &::before {
     width: 130px;
     height: 130px;
@@ -102,9 +104,14 @@
     border-radius: 50%;
     background-color: white;
     transition-duration: .5s;
-    transition-timing-function: steps(3);
+    transition-timing-function: steps(2);
   }
   &:hover {
+    &::after{
+      top: -50px;
+    }
+  }
+  &:visited {
     &::after{
       top: -50px;
     }

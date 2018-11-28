@@ -17,7 +17,6 @@ import reportPage from './pages/reportPage';
 import laboPage from './pages/laboPage';
 import errorPage from './pages/errorPage';
 import drawPage from './pages/drawPage';
-import bgImages from './pages/bgimages';
 
 
 export default {
@@ -27,7 +26,6 @@ export default {
     reportPage,
     laboPage,
     drawPage,
-    bgImages,
     errorPage,
   },
   data: function() {

@@ -36,8 +36,9 @@
           |食べたい
         a.c-btn.p-cookie(href='')
           |クッキー
-        .c-btn.p-bite(href='')
-          |はらへ
+        .p-bite__outer
+          a.c-btn.p-bite(href='https://heines.github.io/learn-css/')
+            |はらへ
 </template>
 
 <script>
