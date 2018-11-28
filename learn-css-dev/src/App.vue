@@ -3,7 +3,8 @@
     component(:is="isError")
     .menu
       .menu__btn(@click="transPage('reportPage')") report
-      .menu__btn(@click="transPage('componentsPage')") home
+      .menu__btn(@click="transPage('componentsPage')") button
+      .menu__btn(@click="transPage('drawPage')") draw
       .menu__btn(@click="transPage('laboPage')") labo
       .menu__btn(@click="transPage('bgImages')") bg
       .menu__btn(@click="openErrorPage('errorPage')") error
@@ -15,7 +16,9 @@ import componentsPage from './pages/componentsPage';
 import reportPage from './pages/reportPage';
 import laboPage from './pages/laboPage';
 import errorPage from './pages/errorPage';
+import drawPage from './pages/drawPage';
 import bgImages from './pages/bgimages';
+
 
 export default {
   name: 'App',
@@ -23,6 +26,7 @@ export default {
     componentsPage,
     reportPage,
     laboPage,
+    drawPage,
     bgImages,
     errorPage
   },
@@ -61,7 +65,7 @@ menu {
 
 .menu__btn {
   height: 2em;
-  width: 50px;
+  width: 70px;
   display: inline-block;
   transition: .5s ease;
   border-bottom: 4px solid transparent;

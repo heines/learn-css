@@ -2,20 +2,18 @@
   .hello
     naviber
     h1 Learn CSS
-    button1
+    tabmenu
     hamburger
-    button3
+    ripple
     button4
-    graph
 </template>
 
 <script>
-  import button1 from './button1';
-  import button3 from './button3';
+  import tabmenu from '../components/tab-menu';
   import hamburger from '../components/hamburger';
   import naviber from '../components/naviber';
+  import ripple from '../components/ripple';
   import button4 from './button4';
-  import graph from '../components/graph';
   export default {
     name: 'componentsPage',
     data () {
@@ -23,12 +21,11 @@
       };
     },
     components: {
-      button1,
       hamburger,
-      button3,
+      tabmenu,
+      ripple,
       naviber,
       button4,
-      graph,
     }
   }
 </script>

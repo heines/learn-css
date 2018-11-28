@@ -20,6 +20,7 @@ export default {
     width: 100px;
     height: 100px;
     position: relative;
+    margin-top: 10px;
     background-color: gray;
     border-radius: 50px;
     &::before {

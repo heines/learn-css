@@ -4,7 +4,6 @@
     report1104
     aboutPosition
     report1103
-    balloon
     halo
     flexBox
 </template>
