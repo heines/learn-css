@@ -1,11 +1,11 @@
 <template lang="pug">
-  .naviber
-    .naviber-contents
-      a(href="#").naviber_a test1
-    .naviber-contents
-      a(href="#").naviber_a test2
-    .naviber-contents
-      a(href="#").naviber_a test3
+  .p-naviber
+    .p-naviber-contents
+      a.p-naviber_a(href="#") test1
+    .p-naviber-contents
+      a.p-naviber_a(href="#") test2
+    .p-naviber-contents
+      a.p-naviber_a(href="#") test3
 </template>
 
 <script>
@@ -20,15 +20,14 @@ export default {
 
 <style lang="scss" scoped>
 @import '../css/_variables';
-
-  .naviber {
+  .p-naviber {
     height: 50px;
     display: flex;
     justify-content:space-around;
     flex-direction: row;
     position: sticky;
     top: 0;
-    background-color: rgba(250, 250, 250, 0.5);
+    border-bottom: 1px solid rgba(250, 250, 250, 0.5);
     transition: 1s ease;
     &-contents {
       display: flex;
@@ -39,14 +38,14 @@ export default {
       display: block;
       text-decoration: none;
       font-size: 1.5em;
-      color: rgba(250, 250, 250, 0.5);
+      color: transparent;
       transition: 1s ease;
     }
     &:hover {
       box-sizing: border-box;
       background-color: rgba(250, 250, 250, 1.0);
-      .naviber_a {
-        color: $azureblue;
+      .p-naviber_a {
+        color: blue;
       }
     }
   }
