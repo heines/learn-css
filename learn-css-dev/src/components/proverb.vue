@@ -21,11 +21,17 @@ export default {
   color: hsl(0%, 0%, 32%);
 }
 .p-prov__paper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   background-color: hsl(50%, 100%, 97%);
 }
 
 .p-prov__text {
+  display: block;
+  margin-left: 2em;
+  margin-right: 2em;
   font-size: 1.2em;
   animation-name: slideIn, fadeIn;
   animation-duration: 1s;
