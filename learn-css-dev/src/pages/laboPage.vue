@@ -3,6 +3,7 @@
     lightSwitch
     novel
     proverb
+    manuscript
     bgText
 </template>
 
@@ -12,6 +13,7 @@
   import shobon from '../components/shobon';
   import lightSwitch from '../components/lightSwitch';
   import bgText from '../components/bgText';
+  import manuscript from '../components/manuscript';
 
   export default {
     name: 'componentsPage',
@@ -22,6 +24,7 @@
     components: {
       novel,
       proverb,
+      manuscript,
       shobon,
       lightSwitch,
       bgText
