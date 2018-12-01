@@ -16,7 +16,7 @@ export default {
 
 <style lang="scss" scoped>
   .p-large-text-field {
-    position: absolute;
+    position: fixed;
     left: -10px;
     bottom: -10px;
     color: transparent;
