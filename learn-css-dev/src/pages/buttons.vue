@@ -39,6 +39,9 @@
         .p-bite__outer
           a.c-btn.p-bite(href='https://heines.github.io/learn-css/')
             |はらへ
+      .c-flexbox
+        a.c-btn.p-btn-curtain(href='')
+          |カーテン
 </template>
 
 <script>
@@ -60,6 +63,7 @@
   @import '../css/Object/Component/_flexbox.scss';
   @import '../css/Object/Project/_btn.scss';
   @import '../css/Object/Project/_btn-small.scss';
+  @import '../css/Object/Project/_btn-curtain.scss';
   @import '../css/Object/Project/_balloon.scss';
   @import '../css/Object/Project/_image-box.scss';
   @import '../css/Object/Project/_cookie.scss';
