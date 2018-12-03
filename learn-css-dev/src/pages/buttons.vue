@@ -42,6 +42,9 @@
       .c-flexbox
         a.c-btn.p-btn-curtain(href='')
           |カーテン
+      .c-flexbox
+        a.c-btn.p-blur-btn(href='')
+          img(src='../assets/sky.jpg')
 </template>
 
 <script>
@@ -64,8 +67,10 @@
   @import '../css/Object/Project/_btn.scss';
   @import '../css/Object/Project/_btn-small.scss';
   @import '../css/Object/Project/_btn-curtain.scss';
+  @import '../css/Object/Project/_blur_btn.scss';
   @import '../css/Object/Project/_balloon.scss';
   @import '../css/Object/Project/_image-box.scss';
   @import '../css/Object/Project/_cookie.scss';
+  @import '../css/Object/Project/_blur_btn.scss';
   @import '../css/Layout/_layout.scss';
 </style>
