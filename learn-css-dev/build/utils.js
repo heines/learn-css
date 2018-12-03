@@ -19,7 +19,7 @@ exports.cssLoaders = function (options) {
     loader: 'css-loader',
     options: {
       sourceMap: options.sourceMap,
-      url: false
+      url: false,
     }
   }
 

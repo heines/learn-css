@@ -45,6 +45,7 @@
       .c-flexbox
         a.c-btn.p-blur-btn(href='')
           img(src='../assets/sky.jpg')
+        a.c-btn.p-blur-btn__opacity(href='')
 </template>
 
 <script>
