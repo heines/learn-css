@@ -1,4 +1,4 @@
-.p-blur-btn {
+.p-btn-blur {
   overflow: hidden;
   img {
     width: 150px;
@@ -14,7 +14,7 @@
   }
 }
 
-.p-blur-btn__opacity {
+.p-btn-blur-opacity {
   width: 150px;
   height: 50px;
   position: relative;
@@ -23,11 +23,11 @@
   font-weight: bold;
   z-index: 2;
   &:hover {
-    .p-blur-btn__opacity__bg1 {
+    .p-btn-blur-opacity__bg1 {
       opacity: 1;
       z-index: 3;
     }
-    .p-blur-btn__opacity__bg2 {
+    .p-btn-blur-opacity__bg2 {
       opacity: 0;
     }
   }

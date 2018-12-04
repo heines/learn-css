@@ -1,8 +1,8 @@
-/* tooltip */
-.p-tooltip {
+.p-balloon {
   position: relative;
   padding: 10px;
   border: 1px solid #eee;
+  color: midnightblue;
   &::before { // 吹き出しの三角
     position: absolute;
     z-index: 2;

@@ -1,59 +1,4 @@
-.p-biscuit {
-  width: 150px;
-  height: 150px;
-  position: relative;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 50%;
-  background-color: #60452E;
-  box-shadow: 0px 0px 0px 8px #60452E;
-  border: 1px dashed #443121;
-  color: #443121;
-  font-size: 1.5em;
-  font-weight: bold;
-  text-shadow:#7B583B 0 0 2px;
-  &::before, &::after {
-    transition-duration: .5s;
-    transition-timing-function: ease;
-  }
-  &::before {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    left: -1px;
-    top: 0;
-    content: '';
-    border-radius: 50%;
-    background-color: #60452E;
-    box-shadow: 0px 0px 0px 8px #60452E;
-    border: 1px dashed #60452E;
-    z-index: -2;
-  }
-  &::after {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    content: '';
-    border-radius: 50%;
-    background-color: white;
-    border: 1px solid #60452E;
-    z-index: -1;
-  }
-  &:hover {
-    @at-root #{&}::before, #{&}::after{
-      left: -40px;
-    }
-  }
-  &:active {
-    @at-root #{&}::after{
-      background-color: transparentize(white, 0.5);
-    }
-  }
-}
-
-.p-cookie {
+.p-btn-cookie {
   width: 150px;
   height: 150px;
   position: relative;
@@ -66,7 +11,7 @@
   color: white;
 }
 
-.p-bite {
+.p-btn-bite {
   &__outer {
     width: 160px;
     height: 160px;

@@ -2,22 +2,22 @@
   .base-box
     .contents__large
       .c-flexbox
-        a.c-btn.p-tooltip.p-tooltip__top(label="balloon" href="#")
-          | text hover show tooltip bottom
+        a.c-btn.p-balloon.p-balloon__top(label="balloon" href="#")
+          | text hover show balloon bottom
         a.p-btn-round(href="#")
       .c-flexbox
-        a(href="").c-btn.p-middle-btn 上に戻る
-        a(href="").c-btn.p-small-btn 上
-        a(href="").c-btn.p-triangle-btn 上
-        .p-middle-cross-btn__outer
-          a(href="").c-btn.p-middle-cross-btn 上に戻る
-        a(href="").c-btn.p-middle-bar-btn 上に戻る
+        a(href="").c-btn.p-btn-middle 上に戻る
+        a(href="").c-btn.p-btn-small 上
+        a(href="").c-btn.p-btn-triangle 上
+        .p-btn-cross-middle__outer
+          a(href="").c-btn.p-btn-cross-middle 上に戻る
+        a(href="").c-btn.p-btn-bar-middle 上に戻る
       .c-flexbox
-        a(href="").c-btn.p-shadow-btn 影付き
-        a(href="").c-btn.p-shutter-btn シャッター
-        a(href="").c-btn.p-camera-btn シャッター2
-        a(href="").c-btn.p-btn--camera2 シャッター3
-        a(href="").c-btn.p-btn--camera3 シャッター4
+        a(href="").c-btn.p-btn-shadow 影付き
+        a(href="").c-btn.p-btn-shutter シャッター
+        a(href="").c-btn.p-btn-camera カメラ
+        a(href="").c-btn.p-btn-camera2 カメラ2
+        a(href="").c-btn.p-btn-camera3 カメラ3
       .c-flexbox
         .p-image-box
           .p-image-box__inner-line
@@ -30,24 +30,24 @@
           |パスを変える必要性。
         lineShare
       .c-flexbox
-        a.c-btn.p-biscuit(href='')
+        a.c-btn.p-btn-biscuit(href='')
           |オレオ
           br
           |食べたい
-        a.c-btn.p-cookie(href='')
+        a.c-btn.p-btn-cookie(href='')
           |クッキー
-        .p-bite__outer
-          a.c-btn.p-bite(href='https://heines.github.io/learn-css/')
+        .p-btn-bite__outer
+          a.c-btn.p-btn-bite(href='https://heines.github.io/learn-css/')
             |はらへ
       .c-flexbox
         a.c-btn.p-btn-curtain(href='')
           |カーテン
       .c-flexbox
-        a.c-btn.p-blur-btn(href='')
+        a.c-btn.p-btn-blur(href='')
           img(src='../assets/sky.jpg')
-        a.c-btn.p-blur-btn__opacity(href='' tags='entrance') sky
-          .p-blur-btn__opacity__bg1
-          .p-blur-btn__opacity__bg2
+        a.c-btn.p-btn-blur-opacity(href='' tags='entrance') sky
+          .p-btn-blur-opacity__bg1
+          .p-btn-blur-opacity__bg2
 </template>
 
 <script>
@@ -69,11 +69,12 @@
   @import '../css/Object/Component/_flexbox.scss';
   @import '../css/Object/Project/_btn.scss';
   @import '../css/Object/Project/_btn-small.scss';
+  @import '../css/Object/Project/_btn-cross-middle.scss';
   @import '../css/Object/Project/_btn-curtain.scss';
-  @import '../css/Object/Project/_blur_btn.scss';
+  @import '../css/Object/Project/_btn-blur.scss';
   @import '../css/Object/Project/_balloon.scss';
   @import '../css/Object/Project/_image-box.scss';
+  @import '../css/Object/Project/_btn-biscuit.scss';
   @import '../css/Object/Project/_cookie.scss';
-  @import '../css/Object/Project/_blur_btn.scss';
   @import '../css/Layout/_layout.scss';
 </style>
