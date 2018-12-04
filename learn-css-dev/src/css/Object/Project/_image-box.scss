@@ -40,7 +40,7 @@
   height: 170px;
   display: block;
   position: relative;
-  background-image: url('/static/img/flower.313ff7e.jpg');
+  background-image: url('../assets/flower.jpg');
   background-size: cover;
   transition-duration: .3s;
   transition-timing-function:ease-out;
@@ -79,7 +79,7 @@
     content: '';
     bottom: -10px;
     right: -10px;
-    background-image: url('/static/img/flower.313ff7e.jpg');
+    background-image: url('../assets/flower.jpg');
     background-size: cover;
   }
 }
