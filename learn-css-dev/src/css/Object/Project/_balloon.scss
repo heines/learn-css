@@ -1,8 +1,10 @@
+@import '../../_variables.scss';
+
 .p-balloon {
   position: relative;
   padding: 10px;
   border: 1px solid #eee;
-  color: midnightblue;
+  color: $midnight;
   &::before { // 吹き出しの三角
     position: absolute;
     z-index: 2;

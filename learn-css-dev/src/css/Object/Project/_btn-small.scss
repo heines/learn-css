@@ -1,3 +1,5 @@
+@import '../../_variables.scss';
+
 .p-btn-round {
   width: 50px;
   height: 50px;
@@ -24,9 +26,9 @@
 .p-btn-small {
   height: 50px;
   width: 50px;
-  border: 2px solid midnightblue;
+  border: 2px solid $midnight;
   box-sizing: border-box;
-  color: midnightblue;
+  color: $midnight;
   font-weight: bold;
   transition: 1s ease;
   &:hover {
@@ -38,10 +40,10 @@
   height: 50px;
   width: 50px;
   position: relative;
-  border-top: 2px solid midnightblue;
-  border-bottom: 2px solid midnightblue;
+  border-top: 2px solid $midnight;
+  border-bottom: 2px solid $midnight;
   box-sizing: border-box;
-  color: midnightblue;
+  color: $midnight;
   font-weight: bold;
   transition: .5s ease;
   &::before, &::after {
@@ -49,7 +51,7 @@
     height: 48px;
     position: absolute;
     content: '';
-    background-color: midnightblue;
+    background-color: $midnight;
     transition: .5s ease;
   }
   &::before {
@@ -68,7 +70,7 @@
       height: 48px;
       position: absolute;
       content: '';
-      background-color: midnightblue;
+      background-color: $midnight;
       transform-origin: bottom;
       transition: .5s ease;
     }

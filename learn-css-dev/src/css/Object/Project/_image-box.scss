@@ -1,10 +1,12 @@
+@import '../../_variables.scss';
+
 .p-image-box {
   position: relative;
   height: 200px;
   width: 300px;
   margin: 20px auto;
   padding: 8px;
-  background-color: midnightblue;
+  background-color: $midnight;
   &__inner-line {
     height: 100%;
     border: 1px dashed white;

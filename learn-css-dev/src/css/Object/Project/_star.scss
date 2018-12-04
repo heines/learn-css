@@ -1,3 +1,5 @@
+@import '../../_variables.scss';
+
 .star {
   position: relative;
   width: 74px;
@@ -5,7 +7,7 @@
   box-sizing: content-box;
   border-width: 69px 23px 0;
   border-style: solid;
-  border-color: midnightblue transparent;
+  border-color: $midnight transparent;
   &::before {
     content: "";
     position: absolute;
@@ -15,7 +17,7 @@
     left: -22px;
     border-width: 0 59px 42px;
     border-style: solid;
-    border-color: transparent transparent midnightblue;
+    border-color: transparent transparent $midnight;
   }
   &::after {
     width: 0;

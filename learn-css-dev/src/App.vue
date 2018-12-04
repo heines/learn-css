@@ -12,70 +12,72 @@
 </template>
 
 <script>
-import buttonPage from './pages/buttonPage';
-import reportPage from './pages/reportPage';
-import laboPage from './pages/laboPage';
-import errorPage from './pages/errorPage';
-import drawPage from './pages/drawPage';
+  import buttonPage from './pages/buttonPage';
+  import reportPage from './pages/reportPage';
+  import laboPage from './pages/laboPage';
+  import errorPage from './pages/errorPage';
+  import drawPage from './pages/drawPage';
 
 
-export default {
-  name: 'App',
-  components: {
-    buttonPage,
-    reportPage,
-    laboPage,
-    drawPage,
-    errorPage,
-  },
-  data: function() {
-    return {
-      current: 'buttonPage',
-      isError: '',
-      currentTitle: "buttonPage"
+  export default {
+    name: 'App',
+    components: {
+      buttonPage,
+      reportPage,
+      laboPage,
+      drawPage,
+      errorPage,
+    },
+    data: function() {
+      return {
+        current: 'buttonPage',
+        isError: '',
+        currentTitle: "buttonPage"
+      }
+    },
+    methods: {
+      transPage : function(page){
+    		this.current = page;
+        this.currentTitle = page;
+    	},
+      openErrorPage : function(page){
+    		this.isError = page;
+    	},
+      closeErrorPage : function(){
+    		this.isError = '';
+    	}
     }
-  },
-  methods: {
-    transPage : function(page){
-  		this.current = page;
-      this.currentTitle = page;
-  	},
-    openErrorPage : function(page){
-  		this.isError = page;
-  	},
-    closeErrorPage : function(){
-  		this.isError = '';
-  	}
   }
-}
 </script>
 
 <style lang="scss" scoped>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  @import 'css/_variables.scss';
 
-h1, h2 {
-  font-weight: normal;
-}
-
-.p-menu {
-  display: flex;
-  justify-content: center;
-}
-
-.p-menu__btn {
-  height: 2em;
-  width: 70px;
-  display: inline-block;
-  transition: .5s ease;
-  border-bottom: 4px solid transparent;
-  &:hover {
-    border-bottom: 4px solid midnightblue;
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
   }
-}
+
+  h1, h2 {
+    font-weight: normal;
+  }
+
+  .p-menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .p-menu__btn {
+    height: 2em;
+    width: 70px;
+    display: inline-block;
+    transition: .5s ease;
+    border-bottom: 4px solid transparent;
+    &:hover {
+      border-bottom: 4px solid $midnight;
+    }
+  }
 </style>

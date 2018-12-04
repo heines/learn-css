@@ -1,8 +1,10 @@
+@import '../../_variables.scss';
+
 .p-btn-middle {
   height: 50px;
   width: 150px;
   position: relative;
-  color: midnightblue;
+  color: $midnight;
   font-weight: bold;
   &::before, &::after {
     width: 100%;
@@ -10,7 +12,7 @@
     position: absolute;
     left: 0;
     content: '';
-    background: midnightblue;
+    background: $midnight;
     transition: .5s ease;
   }
   &::before {
@@ -25,7 +27,7 @@
       height: 2px;
       position: absolute;
       content: '';
-      background: midnightblue;
+      background: $midnight;
     }
     &::before {
       bottom: 0;
@@ -36,16 +38,16 @@
   }
   &:active {
     color: white;
-    background: midnightblue;
+    background: $midnight;
   }
 }
 .p-btn-bar-middle {
   height: 50px;
   width: 150px;
   position: relative;
-  border: 2px solid midnightblue;
+  border: 2px solid $midnight;
   box-sizing: border-box;
-  color: midnightblue;
+  color: $midnight;
   font-weight: bold;
   &::before {
     width: 10px;
@@ -66,7 +68,7 @@
   }
   &:active {
     color: white;
-    background: midnightblue;
+    background: $midnight;
   }
 }
 
@@ -75,8 +77,8 @@
   width: 150px;
   background-color: #0060e6;
   border-radius: 10px;
-  border-bottom: 4px solid midnightblue;
-  color: midnightblue;
+  border-bottom: 4px solid $midnight;
+  color: $midnight;
   font-size: 20px;
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
@@ -91,7 +93,7 @@
   height: 50px;
   position: relative;
   border-radius: 10px;
-  color: midnightblue;
+  color: $midnight;
   font-weight: bold;
   overflow: hidden;
   &::before {
@@ -102,7 +104,7 @@
     content: '';
     display: block;
     z-index: -1;
-    background-color: midnightblue;
+    background-color: $midnight;
     transition: .2s;
     transform: scale(0, 1);
   }
@@ -118,9 +120,9 @@
   width: 150px;
   height: 50px;
   position: relative;
-  border: 2px solid midnightblue;
+  border: 2px solid $midnight;
   box-sizing: border-box;
-  color: midnightblue;
+  color: $midnight;
   font-weight: bold;
   transition: .2s;
   overflow: hidden; // はみ出た平行四辺形をhiddenする
@@ -132,7 +134,7 @@
     left: -10%;
     z-index: -1;
     content: '';
-    background: midnightblue;
+    background: $midnight;
     transform: skewX(-30deg) scale(0, 1); // 傾き。scaleはノルム
     transition: transform .2s;
   }
@@ -160,12 +162,12 @@
     left: -10%;
     z-index: -1;
     content: '';
-    background-color: midnightblue;
+    background-color: $midnight;
     transform: skewX(30deg) scale(1, 1); // 傾き。scaleはノルム
     transition: transform .2s;
   }
   &:hover {
-    color: midnightblue;
+    color: $midnight;
     &::before {
       transform: skewX(30deg) scale(0, 1);
     }
@@ -176,7 +178,7 @@
   width: 150px;
   height: 50px;
   position: relative;
-  color: midnightblue;
+  color: $midnight;
   font-weight: bold;
   transition: .2s;
   overflow: hidden; // はみ出た平行四辺形をhiddenする
@@ -186,7 +188,7 @@
     position: absolute;
     z-index: -1;
     content: '';
-    background-color: midnightblue;
+    background-color: $midnight;
     transform: skewX(-30deg) scale(0, 1); // 傾き。scaleはノルム
     transition: transform .2s;
   }

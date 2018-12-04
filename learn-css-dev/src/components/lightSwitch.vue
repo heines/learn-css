@@ -23,6 +23,7 @@
 </script>
 
 <style lang="scss" scoped>
+  @import '../css/_variables.scss';
   .p-marker {
     &__tag {
       width: 50px;
@@ -37,7 +38,7 @@
       position: absolute;
       top: 0;
       right: 12px;
-      background-color: midnightblue;
+      background-color: $midnight;
     }
     &__background {
       position: fixed;
@@ -56,7 +57,7 @@
       bottom: 50px;
       right: 0;
       border-radius: 13px;
-      background-color: midnightblue;
+      background-color: $midnight;
       transition: .5s ease;
       z-index:3;
       &.rise {

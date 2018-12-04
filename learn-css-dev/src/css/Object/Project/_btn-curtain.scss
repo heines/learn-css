@@ -1,10 +1,12 @@
+@import '../../_variables.scss';
+
 .p-btn-curtain {
   height: 50px;
   width: 150px;
   position: relative;
-  border: 2px solid midnightblue;
+  border: 2px solid $midnight;
   font-weight: bold;
-  color: midnightblue;
+  color: $midnight;
   box-sizing: border-box;
   &::before {
     width: 100%;
@@ -14,7 +16,7 @@
     content: '';
     display: block;
     z-index: -1;
-    background-color: midnightblue;
+    background-color: $midnight;
     transition: .2s;
     transform-origin: top;
     transform: scale(1, 0);

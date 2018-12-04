@@ -1,3 +1,5 @@
+@import '../../_variables.scss';
+
 .p-btn-cross-middle {
   &__outer {
     width: 160px;
@@ -9,10 +11,10 @@
   height: 50px;
   width: 146px;
   position: relative;
-  border-right: 2px solid midnightblue;
-  border-left: 2px solid midnightblue;
+  border-right: 2px solid $midnight;
+  border-left: 2px solid $midnight;
   box-sizing: border-box;
-  color: midnightblue;
+  color: $midnight;
   font-weight: bold;
   transition: .5s ease;
   &::before, &::after {
@@ -21,7 +23,7 @@
     position: absolute;
     left: -6px;
     content: "";
-    background: midnightblue;
+    background: $midnight;
     transition: .5s ease;
   }
   &::before {
@@ -39,7 +41,7 @@
       position: absolute;
       left: 0;
       content: '';
-      background: midnightblue;
+      background: $midnight;
     }
     &::after {
       top: 0;
@@ -50,6 +52,6 @@
   }
   &:active {
     color: white;
-    background: midnightblue;
+    background: $midnight;
   }
 }
