@@ -4,6 +4,7 @@
     novel
     proverb
     manuscript
+    frosted
     bgText
 </template>
 
@@ -14,6 +15,7 @@
   import lightSwitch from '../components/lightSwitch';
   import bgText from '../components/bgText';
   import manuscript from '../components/manuscript';
+  import frosted from '../components/frosted';
 
   export default {
     name: 'componentsPage',
@@ -27,7 +29,8 @@
       manuscript,
       shobon,
       lightSwitch,
-      bgText
+      bgText,
+      frosted
     }
   }
 </script>
