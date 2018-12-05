@@ -6,7 +6,7 @@
       .p-manuscript__textarea
         .p-manuscript__text__outer
           .p-manuscript__text
-            |「どうして、ヒトだけが特別だなんて思ったの？どうでもいいけど」
+            |「どうして、ヒトだけが特別だなんて思ったの？」
             br
             |　彼女は、興味がない、という体で頬杖をつく。運悪く箱舟に乗せられた俺は、ただの実験動物に過ぎない。
             br
@@ -17,6 +17,8 @@
         .p-manuscript__text__outer
           .p-manuscript__text
             |　ちなみに、原稿用紙の真ん中にある模様は、「魚尾」と呼ばれるもので、半分にして折ることを前提とした印である。
+            br
+            |　結局 grid レイアウトを使用した。
 </template>
 
 <script>
@@ -32,6 +34,7 @@ export default {
 <style lang="scss" scoped>
   .p-manuscript {
     width: 100%;
+    min-width: 800px;
     padding: 10px;
     box-sizing: border-box;
     &__paper {
@@ -39,11 +42,8 @@ export default {
       height: 500px;
       display: flex;
       flex-direction: column;
-      table-layout: fixed;
-      position: relative;
       padding: 50px;
       box-sizing: border-box;
-      overflow: hidden;
       background-color: hsl(50%, 100%, 97%);
       font-family:serif;
       color: hsl(0%, 0%, 32%);
@@ -60,16 +60,14 @@ export default {
       text-align: right;
     }
     &__textarea {
-      display: flex;
-      flex-grow: 1;
-      flex-direction: column;
-      justify-content: space-around;
+      width: 100%;
+      display: grid;
+      overflow: hidden;
+      grid-template-rows: 1fr 40px 1fr;
     }
     &__text {
-      display: flex;
       text-align: left;
       &__outer {
-        flex-grow: 1;
         justify-content: flex-start;
       }
     }
