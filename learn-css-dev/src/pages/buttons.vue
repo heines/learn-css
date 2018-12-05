@@ -48,6 +48,9 @@
         a.c-btn.p-btn-blur-opacity(href='' tags='entrance') sky
           .p-btn-blur-opacity__bg1
           .p-btn-blur-opacity__bg2
+        a.c-btn.p-btn-fill(href='#' data-text='testtest') testtest
+      .c-flexbox
+        img(src='../assets/test.svg')
 </template>
 
 <script>
@@ -77,4 +80,37 @@
   @import '../css/Object/Project/_btn-biscuit.scss';
   @import '../css/Object/Project/_cookie.scss';
   @import '../css/Layout/_layout.scss';
+
+  .p-btn-fill {
+    width: 150px;
+    height: 50px;
+    position: relative;
+    border: 1px solid #eee;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: $sky;
+    &::before {
+      width: 100%;
+      height: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: attr(data-text);
+      color: $midnight;
+      clip: rect(0,0,100px,0);
+    }
+    &:hover::before {
+      animation-name: fillin;
+      animation-duration: 1.0s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  @keyframes fillin {
+    to {
+      clip: rect(0,150px,100px,0);
+    }
+  }
 </style>
