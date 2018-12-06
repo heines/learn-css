@@ -49,8 +49,6 @@
           .p-btn-blur-opacity__bg1
           .p-btn-blur-opacity__bg2
         a.c-btn.p-btn-fill(href='#' data-text='testtest') testtest
-      .c-flexbox
-        img(src='../assets/shobon.svg')
 </template>
 
 <script>

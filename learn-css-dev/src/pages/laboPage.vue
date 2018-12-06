@@ -6,6 +6,7 @@
     manuscript
     frosted
     bgText
+    shobon
 </template>
 
 <script>
