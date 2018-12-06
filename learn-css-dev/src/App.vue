@@ -4,7 +4,7 @@
     .p-menu
       .p-menu__btn(@click="transPage('buttonPage')") button
       .p-menu__btn(@click="transPage('drawPage')") draw
-      .p-menu__btn(@click="transPage('laboPage')") labo
+      .p-menu__btn(@click="transPage('labPage')") lab
       .p-menu__btn(@click="transPage('reportPage')") report
       .p-menu__btn(@click="openErrorPage('errorPage')") error
     h2 {{ currentTitle }}
@@ -14,7 +14,7 @@
 <script>
   import buttonPage from './pages/buttonPage';
   import reportPage from './pages/reportPage';
-  import laboPage from './pages/laboPage';
+  import labPage from './pages/labPage';
   import errorPage from './pages/errorPage';
   import drawPage from './pages/drawPage';
 
@@ -24,7 +24,7 @@
     components: {
       buttonPage,
       reportPage,
-      laboPage,
+      labPage,
       drawPage,
       errorPage,
     },
