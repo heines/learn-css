@@ -19,7 +19,7 @@ export default {
     img {
       display: block;
       position: absolute;
-      top: 0;
+      bottom: calc(100% - 100px);
       right: 0;
       animation-name: fallen;
       animation-timing-function: ease;
@@ -30,14 +30,14 @@ export default {
 
   @keyframes fallen {
     0% {
-      top: 0;
+      bottom: calc(100% - 100px);
       opacity: 0
     }
     50% {
       opacity: 1;
     }
     100% {
-      top: 90%;
+      bottom: 100px;
     }
   }
 </style>
