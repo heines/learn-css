@@ -14,13 +14,15 @@ export default {
     position: fixed;
     top: 0;
     right: 10px;
-    width: 80px;
+    width: 100px;
     height: 100vh;
     img {
+      width: 80px;
+      height: auto;
       display: block;
       position: absolute;
-      bottom: calc(100% - 100px);
       right: 0;
+      bottom: calc(100% - 100px);
       animation-name: fallen;
       animation-timing-function: ease;
       animation-duration: 5s;
