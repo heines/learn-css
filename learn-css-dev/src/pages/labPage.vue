@@ -7,6 +7,7 @@
     frosted
     bgText
     shobon
+    wave
 </template>
 
 <script>
@@ -17,6 +18,7 @@
   import bgText from '../components/bgText';
   import manuscript from '../components/manuscript';
   import frosted from '../components/frosted';
+  import wave from '../components/wave';
 
   export default {
     name: 'componentsPage',
@@ -31,7 +33,8 @@
       shobon,
       lightSwitch,
       bgText,
-      frosted
+      frosted,
+      wave
     }
   }
 </script>
