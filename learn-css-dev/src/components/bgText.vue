@@ -15,13 +15,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .p-large-text-field {
-    position: fixed;
-    left: -10px;
-    bottom: -10px;
-    color: transparent;
-    font-size: 5em;
-    text-shadow: 0 0 15px gray;
-    z-index: -1;
-  }
+  @import '../css/Object/Project/_large-text-field.scss';
 </style>

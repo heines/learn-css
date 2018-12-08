@@ -1,0 +1,43 @@
+@import '../../_variables.scss';
+.p-novel {
+  font-family:serif;
+  margin: 10px;
+  color: hsl(0%, 0%, 32%);
+}
+.p-novel__paper {
+  padding: 10px;
+  background-color: hsl(50%, 100%, 97%);
+}
+.p-novel__title {
+  margin: 0;
+  text-align: left;
+  padding-left: 1em;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.p-novel__name {
+  font-size: 0.9em;
+  text-align: right;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.p-novel__story {
+  text-align: left;
+  margin: 0;
+  &--text {
+    margin: 0;
+    &__under {
+      margin: 0;
+      text-indent: 1em;
+    }
+  }
+  &--first {
+    margin: 0;
+    &::first-letter {
+      text-indent: 1em;
+      margin-right: 0.1em;
+      color: $midnight;
+      font-size: 3em;
+      line-height: 1;
+    }
+  }
+}

@@ -12,44 +12,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .p-frosted__body::before,
-  .p-frosted {
-    background-image: url('../assets/sky.jpg');
-    background-position: bottom;
-    background-size: cover;
-  }
-  .p-frosted {
-    width: 50%;
-    margin: 10px;
-    position: relative;
-    &__body {
-      padding: 10px;
-      position: relative;
-      &::before {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: '';
-        padding: 10px;
-        background-clip: content-box;
-        box-sizing: border-box;
-        filter: blur(5px);
-      }
-    }
-    &__text {
-      width: 100%;
-      height: 100%;
-      position: relative;
-      padding: 30px;
-      border: solid 1px rgba(200,200,200,0.4);
-      background-color: rgba(0, 0, 0, 0.3);
-      box-sizing: border-box;
-      color: rgba(252, 182, 175, 0.9);
-      text-align: left;
-      font-size: 1.5em;
-      z-index: 30;
-    }
-  }
+  @import '../css/Object/Project/_frosted.scss';
 </style>
