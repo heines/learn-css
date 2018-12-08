@@ -1,0 +1,31 @@
+@import '../../variables.scss';
+
+.p-btn-light {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  background-color: $midnight;
+  color: #FFFFFF;
+  font-weight: bold;
+  overflow: hidden;
+  &::before {
+    width: 30px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    content: '';
+    opacity: 0.5;
+    background-color: #FFFFFF;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+    transform-origin: left;
+    transform: skewX(-30deg);
+  }
+  &:hover {
+    &::before {
+      left: 200px;
+    }
+  }
+}

@@ -42,6 +42,8 @@
       .c-flexbox
         a.c-btn.p-btn-curtain(href='')
           |カーテン
+        a.c-btn.p-btn-light(href='#')
+          |光る
       .c-flexbox
         a.c-btn.p-btn-blur(href='')
           img(src='../assets/sky.jpg')
@@ -78,5 +80,6 @@
   @import '../css/Object/Project/_btn-biscuit.scss';
   @import '../css/Object/Project/_cookie.scss';
   @import '../css/Object/Project/_btn-fill.scss';
+  @import '../css/Object/Project/_btn-light.scss';
   @import '../css/Layout/_layout.scss';
 </style>
