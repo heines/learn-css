@@ -27,7 +27,7 @@
       .c-flexbox
         a.c-btn.p-btn--bgimage(href="https://heines.github.io/learn-css/")
         a.c-btn.p-btn--tagImage(href="https://heines.github.io/learn-css/")
-          |パスを変える必要性。
+          |擬似要素に画像を追加
         lineShare
       .c-flexbox
         a.c-btn.p-btn-biscuit(href='')
