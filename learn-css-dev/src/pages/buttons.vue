@@ -44,6 +44,7 @@
           |カーテン
         a.c-btn.p-btn-light(href='#')
           |光る
+        a.c-btn.p-btn-light-white 色が逆
       .c-flexbox
         a.c-btn.p-btn-blur(href='')
           img(src='../assets/sky.jpg')
