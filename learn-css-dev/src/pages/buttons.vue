@@ -20,13 +20,13 @@
         a(href="").c-btn.p-btn-camera3 カメラ3
       .c-flexbox
         .p-image-box
-          .p-image-box__inner-line
-            .p-image-box__img__outer
+          .p-image-box__line
+            .p-image-box__img
               img(src='../assets/flower.jpg')
             p.p-image-box__text Photo by Anita Austvika on Unsplash
       .c-flexbox
-        a.c-btn.p-btn--bgimage(href="https://heines.github.io/learn-css/")
-        a.c-btn.p-btn--tagImage(href="https://heines.github.io/learn-css/")
+        a.c-btn.p-btn__bgimage(href="https://heines.github.io/learn-css/")
+        a.c-btn.p-btn__tag-image(href="https://heines.github.io/learn-css/")
           |擬似要素に画像を追加
         lineShare
       .c-flexbox

@@ -7,7 +7,7 @@
   margin: 20px auto;
   padding: 8px;
   background-color: $midnight;
-  &__inner-line {
+  &__line {
     height: 100%;
     border: 1px dashed white;
   }
@@ -17,7 +17,7 @@
     color: white;
     border-bottom: 5px solid rgb(56, 56 ,255);
   }
-  &__img__outer {
+  &__img {
     height: 100px;
     width: 150px;
     position: relative;
@@ -35,7 +35,7 @@
   }
 }
 
-.p-btn--bgimage {
+.p-btn__bgimage {
   width: 200px;
   height: 170px;
   display: block;
@@ -47,20 +47,19 @@
   &:hover {
     opacity: 0.7;
   }
+  &:before {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    content: 'test';
+    top: 20px;
+    right: -10px;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+  }
 }
 
-.p-btn--bgimage:before {
-  width: 100px;
-  height: 30px;
-  position: absolute;
-  content: 'test';
-  top: 20px;
-  right: -10px;
-  background-color: rgba(0,0,0,0.3);
-  color: white;
-}
-
-.p-btn--tagImage {
+.p-btn__tag-image {
   width: 200px;
   height: 170px;
   position: relative;
