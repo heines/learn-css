@@ -52,6 +52,11 @@
           .p-btn-blur-opacity__bg1
           .p-btn-blur-opacity__bg2
         a.c-btn.p-btn-fill(href='#' data-text='testtest') testtest
+      .c-flexbox
+        a.c-btn.p-btn-underline
+          |下線を引く1。文章は長めの方がいいか
+        a.c-btn.p-btn-underline.p-btn-underline--center
+          |下線を引く2
 </template>
 
 <script>
@@ -82,5 +87,6 @@
   @import '../css/Object/Project/_cookie.scss';
   @import '../css/Object/Project/_btn-fill.scss';
   @import '../css/Object/Project/_btn-light.scss';
+  @import '../css/Object/Project/_btn-underline.scss';
   @import '../css/Layout/_layout.scss';
 </style>
