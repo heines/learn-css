@@ -6,6 +6,7 @@
     manuscript
     frosted
     bgText
+    newspaper
     shobon
     wave
 </template>
@@ -18,6 +19,7 @@
   import bgText from '../components/bgText';
   import manuscript from '../components/manuscript';
   import frosted from '../components/frosted';
+  import newspaper from '../components/newspaper';
   import wave from '../components/wave';
 
   export default {
@@ -34,6 +36,7 @@
       lightSwitch,
       bgText,
       frosted,
+      newspaper,
       wave
     }
   }
