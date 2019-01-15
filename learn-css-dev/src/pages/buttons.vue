@@ -53,10 +53,15 @@
           .p-btn-blur-opacity__bg2
         a.c-btn.p-btn-fill(href='#' data-text='testtest') testtest
       .c-flexbox
-        a.c-btn.p-btn-underline
-          |下線を引く1。文章は長めの方がいいか
-        a.c-btn.p-btn-underline.p-btn-underline--center
-          |下線を引く2
+        a.c-btn.p-btn-line
+          |線を引く1。文章は長めの方がいいか
+        a.c-btn.p-btn-line.p-btn-line--center
+          |線を引く2。テストテキスト（modifier 中央から伸びる）
+      .c-flexbox
+        a.c-btn.p-btn-line.p-btn-line__center
+          |線を引く3。テストテキスト（element 中央に線が置かれる）
+        a.c-btn.p-btn-line.p-btn-line__center.p-btn-line--center
+          |線を引く4。テストテキスト（modifier 中央から伸びる）
       .c-flexbox
         .c-scroll-arrow
           .c-scroll-arrow__box1
@@ -101,7 +106,7 @@
   @import '../css/Object/Project/_cookie.scss';
   @import '../css/Object/Project/_btn-fill.scss';
   @import '../css/Object/Project/_btn-light.scss';
-  @import '../css/Object/Project/_btn-underline.scss';
+  @import '../css/Object/Project/_btn-line.scss';
   @import '../css/Layout/_layout.scss';
 
   .c-scroll-arrow {
