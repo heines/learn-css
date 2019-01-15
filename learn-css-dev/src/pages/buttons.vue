@@ -34,6 +34,11 @@
         a(href="").c-btn.p-btn-offset.p-btn-offset__mark
           |テキストがオフセットする。（マークつき）
       .c-flexbox
+        a(href="").c-btn.p-btn-floats
+          |テキストが浮かぶ。
+        a(href="").c-btn.p-btn-floats.p-btn-floats__line
+          |テキストが浮かぶする。（下線つき）
+      .c-flexbox
         .p-image-box
           .p-image-box__line
             .p-image-box__img
@@ -113,6 +118,7 @@
   @import '../css/Object/Project/_btn-light.scss';
   @import '../css/Object/Project/_btn-line-extend.scss';
   @import '../css/Object/Project/_btn-offset.scss';
+  @import '../css/Object/Project/_btn-floats.scss';
   @import '../css/Layout/_layout.scss';
 
   .c-scroll-arrow {
