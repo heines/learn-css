@@ -1,0 +1,36 @@
+@import '../../_variables.scss';
+
+.p-btn-offset {
+  position: relative;
+  font-weight: bold;
+  color: $midnight;
+  transform: translateX(0);
+  transform-origin: left;
+  transition-delay: .2s;
+  transition-duration: .5s;
+  transition-property: transform;
+  &:hover {
+    transform: translateX(10px);
+  }
+  &__mark {
+    &::before {
+      width: 5px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      content: '';
+      background-color: transparent;
+      transform: translateX(0);
+      transform-origin: left;
+      transition-delay: .2s;
+      transition-duration: .5s;
+      transition-property: background-color, transform;
+    }
+    &:hover {
+      &::before {
+        transform: translateX(-10px);
+        background-color: $midnight;
+      }
+    }
+  }
+}

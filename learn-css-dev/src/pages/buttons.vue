@@ -19,6 +19,21 @@
         a(href="").c-btn.p-btn-camera2 カメラ2
         a(href="").c-btn.p-btn-camera3 カメラ3
       .c-flexbox
+        a(href="").c-btn.p-btn-line-extend
+          |線を引く1。文章は長めの方がいいか
+        a(href="").c-btn.p-btn-line-extend.p-btn-line-extend--center
+          |線を引く2。テストテキスト（modifier 中央から伸びる）
+      .c-flexbox
+        a(href="").c-btn.p-btn-line-extend.p-btn-line-extend__center
+          |線を引く3。テストテキスト（element 中央に線が置かれる）
+        a(href="").c-btn.p-btn-line-extend.p-btn-line-extend__center.p-btn-line-extend--center
+          |線を引く4。テストテキスト（modifier 中央から伸びる）
+      .c-flexbox
+        a(href="").c-btn.p-btn-offset
+          |テキストがオフセットする。
+        a(href="").c-btn.p-btn-offset.p-btn-offset__mark
+          |テキストがオフセットする。（マークつき）
+      .c-flexbox
         .p-image-box
           .p-image-box__line
             .p-image-box__img
@@ -44,7 +59,7 @@
           |カーテン
         a.c-btn.p-btn-light(href='#')
           |光る
-        a.c-btn.p-btn-light-white 色が逆
+        a.c-btn.p-btn-light-white(href='#') 色が逆
       .c-flexbox
         a.c-btn.p-btn-blur(href='')
           img(src='../assets/sky.jpg')
@@ -52,16 +67,6 @@
           .p-btn-blur-opacity__bg1
           .p-btn-blur-opacity__bg2
         a.c-btn.p-btn-fill(href='#' data-text='testtest') testtest
-      .c-flexbox
-        a.c-btn.p-btn-line
-          |線を引く1。文章は長めの方がいいか
-        a.c-btn.p-btn-line.p-btn-line--center
-          |線を引く2。テストテキスト（modifier 中央から伸びる）
-      .c-flexbox
-        a.c-btn.p-btn-line.p-btn-line__center
-          |線を引く3。テストテキスト（element 中央に線が置かれる）
-        a.c-btn.p-btn-line.p-btn-line__center.p-btn-line--center
-          |線を引く4。テストテキスト（modifier 中央から伸びる）
       .c-flexbox
         .c-scroll-arrow
           .c-scroll-arrow__box1
@@ -106,7 +111,8 @@
   @import '../css/Object/Project/_cookie.scss';
   @import '../css/Object/Project/_btn-fill.scss';
   @import '../css/Object/Project/_btn-light.scss';
-  @import '../css/Object/Project/_btn-line.scss';
+  @import '../css/Object/Project/_btn-line-extend.scss';
+  @import '../css/Object/Project/_btn-offset.scss';
   @import '../css/Layout/_layout.scss';
 
   .c-scroll-arrow {

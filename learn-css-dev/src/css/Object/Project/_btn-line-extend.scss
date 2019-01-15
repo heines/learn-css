@@ -1,0 +1,35 @@
+@import '../../_variables.scss';
+
+.p-btn-line-extend {
+  position: relative;
+  font-weight: bold;
+  color: $midnight;
+  &::after {
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    background-color: $midnight;
+    transition-property: width;
+    transition-delay: .2s;
+    transition-duration: .8s;
+    transition-timing-function: ease;
+  }
+  &__center {
+    &::after {
+      bottom: calc(50% - 2px);
+    }
+  }
+  &--center {
+    &::after {
+      left: auto;
+    }
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}
