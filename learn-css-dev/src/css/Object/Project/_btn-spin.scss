@@ -1,0 +1,26 @@
+@import '../../_variables.scss';
+
+.p-btn-spin {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  font-weight: bold;
+  color: $midnight;
+  border: $midnight 1px solid;
+  border-radius: 50%;
+  &:hover {
+    animation-name: spin;
+    animation-duration: .8s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}

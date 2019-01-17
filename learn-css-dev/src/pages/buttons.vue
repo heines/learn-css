@@ -37,7 +37,10 @@
         a(href="").c-btn.p-btn-floats
           |テキストが浮かぶ。
         a(href="").c-btn.p-btn-floats.p-btn-floats__line
-          |テキストが浮かぶする。（下線つき）
+          |テキストが浮かぶ。（下線つき）
+      .c-flexbox
+        a(href="").c-btn.p-btn-spin
+          |回
       .c-flexbox
         .p-image-box
           .p-image-box__line
@@ -119,6 +122,7 @@
   @import '../css/Object/Project/_btn-line-extend.scss';
   @import '../css/Object/Project/_btn-offset.scss';
   @import '../css/Object/Project/_btn-floats.scss';
+  @import '../css/Object/Project/_btn-spin.scss';
   @import '../css/Layout/_layout.scss';
 
   .c-scroll-arrow {
