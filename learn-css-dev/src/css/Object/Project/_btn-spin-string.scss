@@ -1,0 +1,45 @@
+@import '../../_variables.scss';
+
+.p-btn-spin-string {
+  position: relative;
+  font-weight: bold;
+  color: $midnight;
+  @for $i from 1 through 6 {
+    .p-btn-spin-string-char#{$i} {
+      opacity: 0;
+    }
+  }
+  &:hover &{
+    @for $i from 0 through 6 {
+      &-char#{$i} {
+        @if $i == 0 {
+          animation-name: spin
+        } @else {
+          animation-name: spin,fadeIn;
+          animation-delay: #{$i * 0.1 + 0.1}s;
+        }
+        animation-duration: .8s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
