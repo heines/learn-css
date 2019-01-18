@@ -8,17 +8,16 @@
   font-weight: bold;
   color: $midnight;
   border: $midnight 1px solid;
-  // &::before {
-  //   width: 100%;
-  //   height: 100%;
-  //   position: absolute;
-  //   z-index: 10;
-  //   left: 0;
-  //   bottom :0;
-  //   content: 'push';
-  //   background-color: $midnight;
-  //   color: #fff;
-  // }
+  &::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    bottom: -14px;
+    content: 'hover';
+    color: $midnight;
+  }
   &__text {
     height: 20px;
     width: 60px;
@@ -31,9 +30,18 @@
     transform: translateX(-40px);
     opacity: 0;
   }
+  &:hover {
+    &::before {
+      animation-name: fadeOut;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;
+    }
+  }
   &:hover &{
     &__text {
       animation-name: sladeIn;
+      animation-delay: .5s;
       animation-duration: 1s;
       animation-fill-mode: forwards;
       animation-timing-function: ease;
@@ -49,5 +57,14 @@
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
