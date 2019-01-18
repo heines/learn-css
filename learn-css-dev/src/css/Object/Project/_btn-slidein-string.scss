@@ -1,0 +1,41 @@
+@import '../../_variables.scss';
+
+.p-btn-slidein-string {
+  width: 100px;
+  height: 50px;
+  display: block;
+  position: relative;
+  font-weight: bold;
+  color: $midnight;
+  border: $midnight 1px solid;
+  // &::before {
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  //   z-index: 10;
+  //   left: 0;
+  //   bottom :0;
+  //   content: 'push';
+  //   background-color: $midnight;
+  //   color: #fff;
+  // }
+  &__text {
+    height: 20px;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

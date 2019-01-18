@@ -19,6 +19,19 @@
         a(href="").c-btn.p-btn-camera2 カメラ2
         a(href="").c-btn.p-btn-camera3 カメラ3
       .c-flexbox
+        a.c-btn.p-btn-curtain(href='')
+          |カーテン
+        a.c-btn.p-btn-light(href='#')
+          |光る
+        a.c-btn.p-btn-light-white(href='#') 色が逆
+      .c-flexbox
+        a.c-btn.p-btn-blur(href='')
+          img(src='../assets/sky.jpg')
+        a.c-btn.p-btn-blur-opacity(href='' tags='entrance') sky
+          .p-btn-blur-opacity__bg1
+          .p-btn-blur-opacity__bg2
+        a.c-btn.p-btn-fill(href='#' data-text='testtest') testtest
+      .c-flexbox
         a(href="").c-btn.p-btn-line-extend
           |線を引く1。文章は長めの方がいいか
         a(href="").c-btn.p-btn-line-extend.p-btn-line-extend--center
@@ -58,6 +71,10 @@
           .p-btn-fallen-string-char5 く
           .p-btn-fallen-string-char6 る
       .c-flexbox
+        a(href="").c-btn.p-btn-slidein-string
+          p.p-btn-slidein-string__text
+            |slide in
+      .c-flexbox
         .p-image-box
           .p-image-box__line
             .p-image-box__img
@@ -78,19 +95,6 @@
         .p-btn-bite__outer
           a.c-btn.p-btn-bite(href='https://heines.github.io/learn-css/')
             |はらへ
-      .c-flexbox
-        a.c-btn.p-btn-curtain(href='')
-          |カーテン
-        a.c-btn.p-btn-light(href='#')
-          |光る
-        a.c-btn.p-btn-light-white(href='#') 色が逆
-      .c-flexbox
-        a.c-btn.p-btn-blur(href='')
-          img(src='../assets/sky.jpg')
-        a.c-btn.p-btn-blur-opacity(href='' tags='entrance') sky
-          .p-btn-blur-opacity__bg1
-          .p-btn-blur-opacity__bg2
-        a.c-btn.p-btn-fill(href='#' data-text='testtest') testtest
       .c-flexbox
         .c-scroll-arrow
           .c-scroll-arrow__box1
@@ -141,6 +145,7 @@
   @import '../css/Object/Project/_btn-spin.scss';
   @import '../css/Object/Project/_btn-spin-string.scss';
   @import '../css/Object/Project/_btn-fallen-string.scss';
+  @import '../css/Object/Project/_btn-slidein-string.scss';
   @import '../css/Layout/_layout.scss';
 
   .c-scroll-arrow {
