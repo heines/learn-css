@@ -49,6 +49,14 @@
           .p-btn-spin-string-char4 て
           .p-btn-spin-string-char5 く
           .p-btn-spin-string-char6 る
+        a(href="").c-btn.p-btn-fallen-string
+          .p-btn-fallen-string-char0 落
+          .p-btn-fallen-string-char1 ち
+          .p-btn-fallen-string-char2 て
+          .p-btn-fallen-string-char3 出
+          .p-btn-fallen-string-char4 て
+          .p-btn-fallen-string-char5 く
+          .p-btn-fallen-string-char6 る
       .c-flexbox
         .p-image-box
           .p-image-box__line
@@ -132,6 +140,7 @@
   @import '../css/Object/Project/_btn-floats.scss';
   @import '../css/Object/Project/_btn-spin.scss';
   @import '../css/Object/Project/_btn-spin-string.scss';
+  @import '../css/Object/Project/_btn-fallen-string.scss';
   @import '../css/Layout/_layout.scss';
 
   .c-scroll-arrow {

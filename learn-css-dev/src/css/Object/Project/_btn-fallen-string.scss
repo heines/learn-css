@@ -1,0 +1,50 @@
+@import '../../_variables.scss';
+
+.p-btn-fallen-string {
+  position: relative;
+  font-weight: bold;
+  color: $midnight;
+  @for $i from 1 through 6 {
+    .p-btn-fallen-string-char#{$i} {
+      opacity: 0;
+    }
+  }
+  &:hover &{
+    @for $i from 0 through 6 {
+      &-char#{$i} {
+        @if $i == 0 {
+        } @else {
+          animation-name: fallen,fadeIn;
+          animation-delay: #{$i * 0.2 + 0.1}s;
+          animation-duration: .8s;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fallen {
+  0% {
+    // transform: translateY(60px), rotateX(0deg);
+    transform: translateY(-20px) rotate(-5deg);
+  }
+  50% {
+    // transform: translateY(30px), rotateX(5deg);
+    transform: translateY(-10px) rotate(10deg);
+  }
+  100% {
+    // transform: translateY(0), rotateX(0deg);
+    transform: translateY(0)　rotate(0deg);
+  }
+}
