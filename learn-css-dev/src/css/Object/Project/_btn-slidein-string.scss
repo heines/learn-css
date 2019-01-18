@@ -28,14 +28,26 @@
     right: 0;
     bottom: 0;
     margin: auto;
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  &:hover &{
+    &__text {
+      animation-name: sladeIn;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;
+    }
   }
 }
 
-@keyframes fadeIn {
+@keyframes sladeIn {
   0% {
+    transform: translateX(-40px);
     opacity: 0;
   }
   100% {
+    transform: translateX(0);
     opacity: 1;
   }
 }
