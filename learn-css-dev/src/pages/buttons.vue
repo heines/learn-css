@@ -75,13 +75,16 @@
           p.p-btn-slidein-string__text
             |slide in
       .c-flexbox
+        a(href="").c-btn.p-btn-slide-image
+          |リンク
+      .c-flexbox
         .p-image-box
           .p-image-box__line
             .p-image-box__img
-              img(src='../assets/flower.jpg')
-            p.p-image-box__text Photo by Anita Austvika on Unsplash
+              img(src='../assets/pakutaso001.jpg')
+            p.p-image-box__text Photo by pakutaso
       .c-flexbox
-        a.c-btn.p-btn__bgimage(href="https://heines.github.io/learn-css/")
+        a.c-btn.p-btn__bgimage(href="https://heines.github.io/learn-css/" texts="pakutaso")
         a.c-btn.p-btn__tag-image(href="https://heines.github.io/learn-css/")
           |擬似要素に画像を追加
         lineShare
@@ -146,6 +149,7 @@
   @import '../css/Object/Project/_btn-spin-string.scss';
   @import '../css/Object/Project/_btn-fallen-string.scss';
   @import '../css/Object/Project/_btn-slidein-string.scss';
+  @import '../css/Object/Project/_btn-slide-image.scss';
   @import '../css/Layout/_layout.scss';
 
   .c-scroll-arrow {
