@@ -76,7 +76,7 @@
             |slide in
       .c-flexbox
         a(href="").c-btn.p-btn-slide-image
-          |リンク
+        a(href="").c-btn.p-btn-stretch-image
       .c-flexbox
         .p-image-box
           .p-image-box__line
@@ -150,6 +150,7 @@
   @import '../css/Object/Project/_btn-fallen-string.scss';
   @import '../css/Object/Project/_btn-slidein-string.scss';
   @import '../css/Object/Project/_btn-slide-image.scss';
+  @import '../css/Object/Project/_btn-stretch-image.scss';
   @import '../css/Layout/_layout.scss';
 
   .c-scroll-arrow {
