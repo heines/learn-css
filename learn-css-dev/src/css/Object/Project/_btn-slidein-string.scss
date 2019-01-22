@@ -33,8 +33,10 @@
   &:hover {
     &::before {
       animation-name: fadeOut;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
+      animation-duration: 1.5s;
+      animation-direction: alternate;
+      animation-fill-mode: both;
+      animation-iteration-count: 2;
       animation-timing-function: ease;
     }
   }
@@ -43,7 +45,9 @@
       animation-name: sladeIn;
       animation-delay: .5s;
       animation-duration: 1s;
-      animation-fill-mode: forwards;
+      animation-direction: alternate;
+      animation-fill-mode: both;
+      animation-iteration-count: 2;
       animation-timing-function: ease;
     }
   }
