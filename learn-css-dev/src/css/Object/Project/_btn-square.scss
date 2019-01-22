@@ -1,0 +1,87 @@
+@import '../../_variables.scss';
+
+.p-btn-square {
+  width: 100px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  &__text {
+    color: $midnight;
+    font-weight: bold;
+  }
+  &__line {
+    &1, &2, &3, &4 {
+      position: absolute;
+      content: '';
+      background-color: $midnight;
+    }
+    &1, &3 {
+      height: 1px;
+      width: 100%;
+    }
+    &2, &4 {
+      width: 1px;
+      height: 100%;
+    }
+    &1 {
+      top: 0;
+    }
+    &2 {
+      right: 0;
+    }
+    &3 {
+      bottom: 0;
+    }
+    &4 {
+      left: 0;
+    }
+  }
+}
+
+.p-btn-square {
+  &__line {
+    &1 {
+      transform: translateX(-100%);
+    }
+    &2 {
+      transform: translateY(-100%);
+    }
+    &3 {
+      transform: translateX(100%);
+    }
+    &4 {
+      transform: translateY(100%);
+    }
+    @for $j from 1 through 4 {
+      &#{$j} {
+        transition-delay: #{(4 - $j) * .5}s;
+        transition-duration: .5s;
+        transition-property: transform;
+      }
+    }
+
+  }
+  &:hover &{
+    &__line {
+      &1 {
+        transform: translateX(0);
+      }
+      &2 {
+        transform: translateY(0);
+      }
+      &3 {
+        transform: translateX(0);
+      }
+      &4 {
+        transform: translateY(0);
+      }
+      @for $i from 1 through 4 {
+        &#{$i} {
+          transition-delay: #{$i  * .5}s;
+          transition-duration: .5s;
+          transition-property: transform;
+        }
+      }
+    }
+  }
+}

@@ -78,6 +78,14 @@
         a(href="").c-btn.p-btn-slide-image
         a(href="").c-btn.p-btn-stretch-image
       .c-flexbox
+        a(href="").c-btn.p-btn-square
+          .p-btn-square__line1
+          .p-btn-square__line2
+          .p-btn-square__line3
+          .p-btn-square__line4
+          .p-btn-square__text
+            |transition
+      .c-flexbox
         .p-image-box
           .p-image-box__line
             .p-image-box__img
@@ -151,6 +159,7 @@
   @import '../css/Object/Project/_btn-slidein-string.scss';
   @import '../css/Object/Project/_btn-slide-image.scss';
   @import '../css/Object/Project/_btn-stretch-image.scss';
+  @import '../css/Object/Project/_btn-square.scss';
   @import '../css/Layout/_layout.scss';
 
   .c-scroll-arrow {
