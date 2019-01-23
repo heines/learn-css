@@ -86,6 +86,18 @@
           .p-btn-square__text
             |transition
       .c-flexbox
+        a(
+          href=""
+          @mouseover="isOver"
+          :class="{'is-over': addIsOver}"
+          ).c-btn.p-btn-square
+          .p-btn-square__line1
+          .p-btn-square__line2
+          .p-btn-square__line3
+          .p-btn-square__line4
+          .p-btn-square__text
+            |transition
+      .c-flexbox
         .p-image-box
           .p-image-box__line
             .p-image-box__img
@@ -128,10 +140,16 @@
     name: 'buttons',
     data () {
       return {
+        addIsOver: false
       }
     },
     components: {
       lineShare
+    },
+    methods: {
+      isOver: function(){
+        this.addIsOver = true;
+      }
     }
   }
 </script>
