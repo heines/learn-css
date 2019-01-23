@@ -85,7 +85,6 @@
           .p-btn-square__line4
           .p-btn-square__text
             |transition
-      .c-flexbox
         a(
           href=""
           @mouseover="isOver"
@@ -97,6 +96,9 @@
           .p-btn-square__line4
           .p-btn-square__text
             |transition
+      .c-flexbox
+        a(href="").c-btn.p-btn-lid
+          |蓋が開く
       .c-flexbox
         .p-image-box
           .p-image-box__line
@@ -178,6 +180,7 @@
   @import '../css/Object/Project/_btn-slide-image.scss';
   @import '../css/Object/Project/_btn-stretch-image.scss';
   @import '../css/Object/Project/_btn-square.scss';
+  @import '../css/Object/Project/_btn-lid.scss';
   @import '../css/Layout/_layout.scss';
 
   .c-scroll-arrow {
