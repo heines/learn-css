@@ -1,4 +1,53 @@
 .p-slide-show {
-  width: 200px;
-  height: 150px;
+  width: 500px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  $image-num: 3;
+  @for $i from 1 through $image-num {
+    &__image#{$i} {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      content: '';
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      animation-name: slideImage;
+      animation-duration: #{$image-num * 4}s;
+      animation-delay: #{$i * ($image-num + 1)}s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: backwards;
+    }
+  }
+  &__image1 {
+    background-image: url('../assets/pakutaso001.jpg');
+  }
+  &__image2 {
+    background-image: url('../assets/pakutaso002.jpg');
+  }
+  &__image3 {
+    background-image: url('../assets/sky.jpg');
+  }
+}
+
+// interection
+@keyframes slideImage {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  33% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  66% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

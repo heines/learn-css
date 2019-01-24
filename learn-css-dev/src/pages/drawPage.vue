@@ -1,9 +1,9 @@
 <template lang="pug">
   div
-    star
-    graph
     .p-slide-show
-      |test
+      .p-slide-show__image1
+      .p-slide-show__image2
+      .p-slide-show__image3
 </template>
 
 <script>
