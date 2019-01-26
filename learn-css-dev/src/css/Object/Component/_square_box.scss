@@ -1,0 +1,23 @@
+.c-square-box {
+  width: 50%;
+  position: relative;
+  margin-top: 50px;
+  background-color: #eee;
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    &-wrap {
+      width: 100%;
+      padding-top: 100%;
+    }
+    & > * {
+      width: 100%;
+    }
+  }
+}
