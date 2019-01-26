@@ -1,8 +1,14 @@
 .c-square-box {
-  width: 50%;
+  width: 40%;
   position: relative;
-  margin-top: 50px;
-  background-color: #eee;
+  margin: 5%;
+  &--bg {
+    background-color: #eee;
+  }
+  &--frame {
+    box-sizing: border-box;
+    border: 1px solid #eee;
+  }
   &__content {
     display: flex;
     justify-content: center;
