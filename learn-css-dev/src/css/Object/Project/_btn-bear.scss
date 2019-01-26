@@ -1,0 +1,82 @@
+.p-btn-bear {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  font-weight: bold;
+  background-color: #fff;
+  transition-property: opacity;
+  transition-duration: .5s;
+  transition-timing-function: ease;
+  border: 4px solid $midnight;
+  box-sizing: border-box;
+  z-index: 1;
+  &__ears {
+    &-left, &-right {
+      position: absolute;
+      content: '';
+      bottom: 27px;
+      width: 30px;
+      height: 30px;
+      background-color: $midnight;
+      border-radius: 50%;
+      z-index: 2;
+      &::before {
+        position: absolute;
+        left: 4px;
+        bottom: 4px;
+        content: '';
+        width: 22px;
+        height: 22px;
+        background-color: #fff;
+        border-radius: 50%;
+        transition-property: background-color;
+        transition-duration: .5s;
+        transition-timing-function: ease;
+      }
+      &::after {
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: '';
+        background-color: #fff;
+        transition-property: background-color;
+        transition-duration: .5s;
+        transition-timing-function: ease;
+      }
+    }
+    &-left {
+      left: 15px;
+    }
+    &-right {
+      right: 15px;
+    }
+  }
+  &__btn {
+    width: 100%;
+    height: 100%;
+    color: $midnight;
+    background-color: #fff;
+    z-index: 10;
+    transition-property: color, background-color;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+  }
+  &:hover {
+    background-color: $midnight;
+    .p-btn-bear {
+      &__ears {
+        &-left, &-right {
+          &::before, &::after {
+            background-color: $midnight
+          }
+        }
+      }
+      &__btn {
+        color: #fff;
+        background-color: $midnight;
+      }
+    }
+  }
+}

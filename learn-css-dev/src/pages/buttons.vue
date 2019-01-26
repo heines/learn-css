@@ -101,6 +101,11 @@
           |蓋が開く
         a(href="").c-btn.p-btn-cat-ears
           |猫耳
+        .p-btn-bear
+          .p-btn-bear__ears-left
+          .p-btn-bear__ears-right
+          a(href="").c-btn.p-btn-bear__btn
+            |くま耳
       .c-flexbox
         .p-image-box
           .p-image-box__line
@@ -184,6 +189,7 @@
   @import '../css/Object/Project/_btn-square.scss';
   @import '../css/Object/Project/_btn-lid.scss';
   @import '../css/Object/Project/_btn-cat-ears.scss';
+  @import '../css/Object/Project/_btn-bear.scss';
   @import '../css/Layout/_layout.scss';
 
   .c-scroll-arrow {
