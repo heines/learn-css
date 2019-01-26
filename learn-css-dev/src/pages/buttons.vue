@@ -99,6 +99,8 @@
       .c-flexbox
         a(href="").c-btn.p-btn-lid
           |蓋が開く
+        a(href="").c-btn.p-btn-cat-ears
+          |猫耳
       .c-flexbox
         .p-image-box
           .p-image-box__line
@@ -181,6 +183,7 @@
   @import '../css/Object/Project/_btn-stretch-image.scss';
   @import '../css/Object/Project/_btn-square.scss';
   @import '../css/Object/Project/_btn-lid.scss';
+  @import '../css/Object/Project/_btn-cat-ears.scss';
   @import '../css/Layout/_layout.scss';
 
   .c-scroll-arrow {

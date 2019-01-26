@@ -1,0 +1,24 @@
+.p-btn-cat-ears {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  color: $midnight;
+  font-weight: bold;
+  border: 4px solid $midnight;
+  box-sizing: border-box;
+  &::before, &::after {
+    position: absolute;
+    content: '';
+    top: -40px;
+    border-top: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid $midnight;
+  }
+  &::before {
+    left: 10%;
+  }
+  &::after {
+    right: 10%;
+  }
+}
