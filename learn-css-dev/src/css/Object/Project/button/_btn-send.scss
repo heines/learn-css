@@ -1,0 +1,90 @@
+.p-btn-send {
+  width: 140px;
+  height: 50px;
+  position: relative;
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 20px;
+  padding-bottom: 0;
+  background-color: rgb(75, 75, 75);
+  border: none;
+  border-radius: 10px;
+  color: #eee;
+  font-size: 1em;
+  font-weight: bold;
+  overflow: hidden;
+  outline: none;
+  &::before {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    background-color: #eee;
+    border-radius: 10px 0 0 10px;
+  }
+  &__envelope {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    background-image: url('../assets/mail-icon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    transition-property: transform;
+    transition-duration: .5s;
+    box-sizing: border-box;
+  }
+  &__good {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    background-image: url('../assets/good-icon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    transition-property: transform;
+    transition-duration: .5s;
+    box-sizing: border-box;
+    opacity: 0;
+  }
+  &:active &{
+    &__envelope {
+      transform: translateX(5px);
+    }
+  }
+  &.is-clicked &{
+    &__envelope {
+      animation-name: sendMail;
+      animation-duration: .4s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+      animation-iteration-count: 1;
+    }
+    &__good {
+      animation-name: fadeIn;
+      animation-delay: .5s;
+      animation-duration: .4s;
+      animation-fill-mode: both;
+      animation-iteration-count: 1;
+    }
+  }
+}
+
+@keyframes sendMail {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}

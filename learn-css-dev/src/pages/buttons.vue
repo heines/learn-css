@@ -121,6 +121,14 @@
       .c-flexbox
         a(href='mailto:test@test.com').c-btn.p-btn-mail
           |mail
+        button(
+          type=submit
+          @click="isClicked"
+          :class="{'is-clicked': addIsClicked}"
+          ).c-btn.p-btn-send
+          .p-btn-send__envelope
+          .p-btn-send__good
+          |send
       .c-flexbox
         .p-image-box
           .p-image-box__line
@@ -165,7 +173,8 @@
     data () {
       return {
         addIsOver: false,
-        addIsLeave: false
+        addIsLeave: false,
+        addIsClicked: false
       }
     },
     components: {
@@ -178,6 +187,9 @@
       },
       isLeave: function(){
         this.addIsLeave = true;
+      },
+      isClicked: function() {
+        this.addIsClicked = true;
       }
     }
   }
