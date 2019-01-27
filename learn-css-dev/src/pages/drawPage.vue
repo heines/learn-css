@@ -44,11 +44,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-  @import '../css/Object/Project/_slide-show.scss';
-  @import '../css/Object/Project/_square_box.scss';
-  @import '../css/Object/Project/_open_box.scss';
-  @import '../css/Object/Project/_rolling.scss';
-  @import '../css/Object/Component/_flexbox.scss';
+  @import '../css/_main.scss';
   h1, h2 {
     font-weight: normal;
   }

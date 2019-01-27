@@ -1,28 +1,15 @@
-@import '../../_variables.scss';
-
-.p-btn-cross-middle {
-  &__outer {
-    width: 160px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.p-btn-middle {
   height: 50px;
-  width: 146px;
+  width: 150px;
   position: relative;
-  border-right: 2px solid $midnight;
-  border-left: 2px solid $midnight;
-  box-sizing: border-box;
   color: $midnight;
   font-weight: bold;
-  transition: .5s ease;
   &::before, &::after {
-    width: 110%;
+    width: 100%;
     height: 2px;
     position: absolute;
-    left: -6px;
-    content: "";
+    left: 0;
+    content: '';
     background: $midnight;
     transition: .5s ease;
   }
@@ -33,21 +20,18 @@
     top: 4px;
   }
   &:hover {
-    height: 50px;
-    width: 156px;
-    &::before, &::after {
+    &::before, &::after{
       width: 100%;
       height: 2px;
       position: absolute;
-      left: 0;
       content: '';
       background: $midnight;
     }
-    &::after {
-      top: 0;
-    }
     &::before {
       bottom: 0;
+    }
+    &::after {
+      top: 0;
     }
   }
   &:active {

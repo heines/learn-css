@@ -164,40 +164,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import '../css/Object/Component/_btn.scss';
-  @import '../css/Object/Component/_flexbox.scss';
-  @import '../css/Object/Project/_btn.scss';
-  @import '../css/Object/Project/_btn-middle.scss';
-  @import '../css/Object/Project/_btn-bar-middle.scss';
-  @import '../css/Object/Project/_btn-shadow.scss';
-  @import '../css/Object/Project/_btn-shutter.scss';
-  @import '../css/Object/Project/_btn-small.scss';
-  @import '../css/Object/Project/_btn-round.scss';
-  @import '../css/Object/Project/_btn-triangle.scss';
-  @import '../css/Object/Project/_btn-cross-middle.scss';
-  @import '../css/Object/Project/_btn-curtain.scss';
-  @import '../css/Object/Project/_btn-blur.scss';
-  @import '../css/Object/Project/_balloon.scss';
-  @import '../css/Object/Project/_image-box.scss';
-  @import '../css/Object/Project/_btn-biscuit.scss';
-  @import '../css/Object/Project/_cookie.scss';
-  @import '../css/Object/Project/_btn-fill.scss';
-  @import '../css/Object/Project/_btn-light.scss';
-  @import '../css/Object/Project/_btn-line-extend.scss';
-  @import '../css/Object/Project/_btn-offset.scss';
-  @import '../css/Object/Project/_btn-floats.scss';
-  @import '../css/Object/Project/_btn-spin.scss';
-  @import '../css/Object/Project/_btn-spin-string.scss';
-  @import '../css/Object/Project/_btn-fallen-string.scss';
-  @import '../css/Object/Project/_btn-slidein-string.scss';
-  @import '../css/Object/Project/_btn-slide-image.scss';
-  @import '../css/Object/Project/_btn-stretch-image.scss';
-  @import '../css/Object/Project/_btn-square.scss';
-  @import '../css/Object/Project/_btn-lid.scss';
-  @import '../css/Object/Project/_btn-cat-ears.scss';
-  @import '../css/Object/Project/_btn-bear.scss';
-  @import '../css/Layout/_layout.scss';
-
+  @import '../css/_main.scss';
   .c-scroll-arrow {
     width: 50px;
     height: 150px;
