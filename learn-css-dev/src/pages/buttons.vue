@@ -110,6 +110,9 @@
           a(href="").c-btn.p-btn-bear__btn
             |くま耳
       .c-flexbox
+        a(href='').c-btn.p-btn-hexagram
+          |hover
+      .c-flexbox
         .p-image-box
           .p-image-box__line
             .p-image-box__img

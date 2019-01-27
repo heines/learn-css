@@ -1,0 +1,75 @@
+.p-btn-hexagram {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  color: #ccc;
+  text-shadow: 0 0 5px #ddd;
+  &::before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    transform: rotateZ(0);
+    transform-origin: center;
+    transition-property: width;
+    transition-delay: .1s;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+    box-shadow: 0 0 5px #ddd;
+  }
+  &::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    transform: rotateZ(0);
+    transform-origin: center;
+    transition-property: width;
+    transition-delay: .1s;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+  }
+  &:hover {
+    &::before, &::after {
+      width: 50px;
+      animation-delay: .4s;
+      animation-fill-mode: both;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    &::before {
+      animation-name: rotateZCCW;
+    }
+    &::after {
+      animation-name: rotateZCW;
+      box-shadow: 0 0 5px #ddd;
+    }
+  }
+}
+
+@keyframes rotateZCW {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotateZCCW {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
