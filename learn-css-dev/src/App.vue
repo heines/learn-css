@@ -3,7 +3,7 @@
     component(:is="isError")
     .p-menu
       .p-menu__btn(@click="transPage('buttonPage')") button
-      .p-menu__btn(@click="transPage('drawPage')") draw
+      .p-menu__btn(@click="transPage('boxPage')") box
       .p-menu__btn(@click="transPage('labPage')") lab
       .p-menu__btn(@click="transPage('reportPage')") report
       .p-menu__btn(@click="openErrorPage('errorPage')") error
@@ -16,7 +16,7 @@
   import reportPage from './pages/reportPage';
   import labPage from './pages/labPage';
   import errorPage from './pages/errorPage';
-  import drawPage from './pages/drawPage';
+  import boxPage from './pages/drawPage';
 
 
   export default {
@@ -25,7 +25,7 @@
       buttonPage,
       reportPage,
       labPage,
-      drawPage,
+      boxPage,
       errorPage,
     },
     data: function() {
