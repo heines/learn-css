@@ -110,7 +110,13 @@
           a(href="").c-btn.p-btn-bear__btn
             |くま耳
       .c-flexbox
-        a(href='').c-btn.p-btn-hexagram
+        a(href=''
+          @mouseover="isOver"
+          @mouseleave="isLeave"
+          :class="{'is-leave': addIsLeave}"
+          ).c-btn.p-btn-octagram
+          |hover
+        a(href='').c-btn.p-btn-oct-rotate
           |hover
       .c-flexbox
         .p-image-box
@@ -155,7 +161,8 @@
     name: 'buttons',
     data () {
       return {
-        addIsOver: false
+        addIsOver: false,
+        addIsLeave: false
       }
     },
     components: {
@@ -164,6 +171,10 @@
     methods: {
       isOver: function(){
         this.addIsOver = true;
+        this.addIsLeave = false;
+      },
+      isLeave: function(){
+        this.addIsLeave = true;
       }
     }
   }
