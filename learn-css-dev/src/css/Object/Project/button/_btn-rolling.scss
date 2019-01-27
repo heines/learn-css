@@ -1,0 +1,21 @@
+.p-btn-rolling {
+  position: relative;
+  padding: 5px;
+  font-weight: bold;
+  color: $midnight;
+  &:hover {
+    animation-name: rolling;
+    animation-duration: .8s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes rolling {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}

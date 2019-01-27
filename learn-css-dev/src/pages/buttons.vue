@@ -52,6 +52,9 @@
         a(href="").c-btn.p-btn-floats.p-btn-floats__line
           |テキストが浮かぶ。（下線つき）
       .c-flexbox
+        a(href="").c-btn.p-btn-rolling(text='テキストが前転する')
+          |テキストが前転する
+      .c-flexbox
         a(href="").c-btn.p-btn-spin
           |回
         a(href="").c-btn.p-btn-spin-string
@@ -95,7 +98,7 @@
           .p-btn-square__line3
           .p-btn-square__line4
           .p-btn-square__text
-            |transition
+            |イベント実装
       .c-flexbox
         a(href="").c-btn.p-btn-lid
           |蓋が開く

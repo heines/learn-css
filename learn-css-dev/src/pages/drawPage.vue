@@ -27,6 +27,8 @@
       .p-box-paper-tag
         |付箋
     .c-flexbox
+      p.p-box-shadow-solid(text="文字列に立体的な影がつく（1行のみ）")
+        |文字列に立体的な影がつく（1行のみ）
 </template>
 
 <script>
