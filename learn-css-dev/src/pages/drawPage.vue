@@ -5,14 +5,22 @@
       .p-slide-show__image2
       .p-slide-show__image3
     .c-flexbox
-      .c-square-box.c-square-box--bg
-        .c-square-box__content-wrap
-          .c-square-box__content
+      .p-square-box.p-square-box--bg
+        .p-square-box__content-wrap
+          .p-square-box__content
             img(src='../assets/pakutaso001.jpg')
-      .c-square-box.c-square-box--frame
-        .c-square-box__content-wrap
-          .c-square-box__content
+      .p-square-box.p-square-box--frame
+        .p-square-box__content-wrap
+          .p-square-box__content
             p 必ず正方形になる
+    .c-flexbox
+      .p-open-box
+        .p-open-box__main
+          p.p-open-box__text
+            |hover
+        .p-open-box__content
+          p.p-open-box__text
+            |text
 </template>
 
 <script>
@@ -34,7 +42,8 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
   @import '../css/Object/Project/_slide-show.scss';
-  @import '../css/Object/Component/_square_box.scss';
+  @import '../css/Object/Project/_square_box.scss';
+  @import '../css/Object/Project/_open_box.scss';
   @import '../css/Object/Component/_flexbox.scss';
   h1, h2 {
     font-weight: normal;
