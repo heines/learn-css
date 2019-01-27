@@ -111,8 +111,8 @@
               img(src='../assets/pakutaso001.jpg')
             p.p-image-box__text Photo by pakutaso
       .c-flexbox
-        a.c-btn.p-btn__bgimage(href="https://heines.github.io/learn-css/" texts="pakutaso")
-        a.c-btn.p-btn__tag-image(href="https://heines.github.io/learn-css/")
+        a.c-btn.p-btn-bgimage(href="https://heines.github.io/learn-css/" texts="pakutaso")
+        a.c-btn.p-btn-tag-image(href="https://heines.github.io/learn-css/")
           |擬似要素に画像を追加
         lineShare
       .c-flexbox

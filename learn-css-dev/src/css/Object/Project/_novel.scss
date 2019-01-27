@@ -4,41 +4,39 @@
   font-family:serif;
   margin: 10px;
   color: hsl(0%, 0%, 32%);
-}
-.p-novel__paper {
-  padding: 10px;
-  background-color: hsl(50%, 100%, 97%);
-}
-.p-novel__title {
-  margin: 0;
-  text-align: left;
-  padding-left: 1em;
-  background-color: rgba(0, 0, 0, 0.05);
-}
-.p-novel__name {
-  font-size: 0.9em;
-  text-align: right;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.p-novel__story {
-}
-
-.p-novel__text {
-  text-align: left;
-  margin: 0;
-  &--normal {
+  &__paper {
+    padding: 10px;
+    background-color: hsl(50%, 100%, 97%);
   }
-  &--under {
-    text-indent: 1em;
+  &__title {
+    margin: 0;
+    text-align: left;
+    padding-left: 1em;
+    background-color: rgba(0, 0, 0, 0.05);
   }
-  &--first {
-    &::first-letter {
+  &__name {
+    font-size: 0.9em;
+    text-align: right;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  &__story {
+  }
+  &__text {
+    text-align: left;
+    margin: 0;
+    &--normal {
+    }
+    &--under {
       text-indent: 1em;
-      margin-right: 0.1em;
-      color: $midnight;
-      font-size: 3em;
-      line-height: 1;
+    }
+    &--first {
+      &::first-letter {
+        text-indent: 1em;
+        margin-right: 0.1em;
+        color: $midnight;
+        font-size: 3em;
+        line-height: 1;
+      }
     }
   }
 }
