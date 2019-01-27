@@ -1,35 +1,29 @@
-.p-btn-camera3 {
+.p-btn-camera {
   width: 150px;
   height: 50px;
   position: relative;
+  border: 2px solid $midnight;
+  box-sizing: border-box;
   color: $midnight;
   font-weight: bold;
   transition: .2s;
   overflow: hidden; // はみ出た平行四辺形をhiddenする
-  &::before, &::after {
+  &::before {
     width: 120%; // ベースの四角を覆えればいい大きさ
     height: 100%;
     position: absolute;
+    top: 0;
+    left: -10%;
     z-index: -1;
     content: '';
-    background-color: $midnight;
+    background: $midnight;
     transform: skewX(-30deg) scale(0, 1); // 傾き。scaleはノルム
     transition: transform .2s;
   }
-  &::before {
-    top: 0;
-    left: -20%;
-    transform-origin: left;
-  }
-  &::after {
-    top: 0;
-    right: -20%;
-    transform-origin: right;
-  }
   &:hover {
     color: white;
-    &::before, &::after  {
-      transform: skewX(-120deg) scale(0.7, 1);
+    &::before {
+      transform: skewX(-30deg) scale(1, 1);
     }
   }
 }

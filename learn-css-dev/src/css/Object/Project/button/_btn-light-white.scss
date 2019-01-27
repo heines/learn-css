@@ -1,11 +1,15 @@
-.p-btn-light {
+.p-btn-light-white {
   width: 150px;
   height: 50px;
   position: relative;
-  background-color: $midnight;
-  color: #FFFFFF;
+  background-color: white;
+  color: $midnight;
   font-weight: bold;
+  border: 2px solid $midnight;
+  box-sizing: border-box;
   overflow: hidden;
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
   &::before {
     width: 30px;
     height: 100%;
@@ -15,13 +19,14 @@
     left: -50px;
     content: '';
     opacity: 0.5;
-    background-color: #FFFFFF;
+    background-color: $midnight;
     transition-duration: .4s;
     transition-timing-function: ease-in-out;
     transform-origin: left;
     transform: skewX(-30deg);
   }
   &:hover {
+    background-color: #e6e6ff;
     &::before {
       left: 200px;
     }

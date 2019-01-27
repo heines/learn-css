@@ -1,20 +1,4 @@
 .p-btn-blur {
-  overflow: hidden;
-  img {
-    width: 150px;
-    height: 50px;
-    object-fit: cover;
-    object-position: 0 100%;
-    filter:blur(5px);
-    transition-duration: 1s;
-    transition-timing-function: linear;
-    &:hover {
-      filter:none;
-    }
-  }
-}
-
-.p-btn-blur-opacity {
   width: 150px;
   height: 50px;
   position: relative;
@@ -23,11 +7,11 @@
   font-weight: bold;
   z-index: 2;
   &:hover {
-    .p-btn-blur-opacity__bg1 {
+    .p-btn-blur__bg1 {
       opacity: 1;
       z-index: 3;
     }
-    .p-btn-blur-opacity__bg2 {
+    .p-btn-blur__bg2 {
       opacity: 0;
     }
   }

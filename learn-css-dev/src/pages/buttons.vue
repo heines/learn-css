@@ -16,7 +16,7 @@
         a(href="").c-btn.p-btn-shadow 影付き
         a(href="").c-btn.p-btn-shutter シャッター
         a(href="").c-btn.p-btn-camera カメラ
-        a(href="").c-btn.p-btn-camera2 カメラ2
+        a(href="").c-btn.p-btn-camera-dark カメラ
         a(href="").c-btn.p-btn-camera3 カメラ3
       .c-flexbox
         a.c-btn.p-btn-curtain(href='')
@@ -25,11 +25,9 @@
           |光る
         a.c-btn.p-btn-light-white(href='#') 色が逆
       .c-flexbox
-        a.c-btn.p-btn-blur(href='')
-          img(src='../assets/sky.jpg')
-        a.c-btn.p-btn-blur-opacity(href='' tags='entrance') sky
-          .p-btn-blur-opacity__bg1
-          .p-btn-blur-opacity__bg2
+        a.c-btn.p-btn-blur(href='' tags='entrance') sky
+          .p-btn-blur__bg1
+          .p-btn-blur__bg2
         a.c-btn.p-btn-fill(href='#' data-text='testtest') testtest
       .c-flexbox
         a(href="").c-btn.p-btn-line-extend
