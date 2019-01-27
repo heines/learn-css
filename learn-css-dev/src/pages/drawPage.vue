@@ -24,6 +24,9 @@
     .c-flexbox
       .p-rolling
         .p-rolling__boll
+      .p-box-paper-tag
+        |付箋
+    .c-flexbox
 </template>
 
 <script>
