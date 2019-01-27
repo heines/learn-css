@@ -21,6 +21,9 @@
         .p-open-box__content
           p.p-open-box__text
             |text
+    .c-flexbox
+      .p-rolling
+        .p-rolling__boll
 </template>
 
 <script>
@@ -44,6 +47,7 @@
   @import '../css/Object/Project/_slide-show.scss';
   @import '../css/Object/Project/_square_box.scss';
   @import '../css/Object/Project/_open_box.scss';
+  @import '../css/Object/Project/_rolling.scss';
   @import '../css/Object/Component/_flexbox.scss';
   h1, h2 {
     font-weight: normal;
