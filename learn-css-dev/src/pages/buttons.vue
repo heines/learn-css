@@ -119,6 +119,9 @@
         a(href='').c-btn.p-btn-oct-rotate
           |hover
       .c-flexbox
+        a(href='mailto:test@test.com').c-btn.p-btn-mail
+          |mail
+      .c-flexbox
         .p-image-box
           .p-image-box__line
             .p-image-box__img
