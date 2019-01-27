@@ -15,6 +15,7 @@
       .c-flexbox
         a(href="").c-btn.p-btn-shadow 影付き
         a(href="").c-btn.p-btn-emboss エンボス
+        a(href="").c-btn.p-btn-solided 立体
         a(href="").c-btn.p-btn-shutter シャッター
         a(href="").c-btn.p-btn-camera カメラ
         a(href="").c-btn.p-btn-camera-dark カメラ
