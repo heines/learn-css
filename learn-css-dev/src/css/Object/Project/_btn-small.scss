@@ -1,28 +1,5 @@
 @import '../../_variables.scss';
 
-.p-btn-round {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  background-color: #87cefa;
-  text-decoration: none;
-  font-size: 2em;
-  color: #76bde0;
-  &::before {
-    content: '1';
-  }
-  &:hover {
-    filter: brightness(98%);
-  }
-  &:active {
-    filter: brightness(90%);
-    color: white;
-  }
-}
-
 .p-btn-small {
   height: 50px;
   width: 50px;
@@ -33,56 +10,5 @@
   transition: 1s ease;
   &:hover {
     border-radius: 25px;
-  }
-}
-
-.p-btn-triangle {
-  height: 50px;
-  width: 50px;
-  position: relative;
-  border-top: 2px solid $midnight;
-  border-bottom: 2px solid $midnight;
-  box-sizing: border-box;
-  color: $midnight;
-  font-weight: bold;
-  transition: .5s ease;
-  &::before, &::after {
-    width: 2px;
-    height: 48px;
-    position: absolute;
-    content: '';
-    background-color: $midnight;
-    transition: .5s ease;
-  }
-  &::before {
-    top: 0;
-    left: 0;
-  }
-  &::after {
-    top: 0;
-    right: 0;
-  }
-  &:hover {
-    padding-top: 15px;
-    border-top: 0 solid white;
-    &::before, &::after {
-      width: 2px;
-      height: 48px;
-      position: absolute;
-      content: '';
-      background-color: $midnight;
-      transform-origin: bottom;
-      transition: .5s ease;
-    }
-    &::before {
-      top: 0;
-      left: 0;
-      transform: rotate(30deg);
-    }
-    &::after {
-      top: 0;
-      right: 0;
-      transform: rotate(-30deg);
-    }
   }
 }

@@ -1,0 +1,32 @@
+@import '../../_variables.scss';
+
+.p-btn-bar-middle {
+  height: 50px;
+  width: 150px;
+  position: relative;
+  border: 2px solid $midnight;
+  box-sizing: border-box;
+  color: $midnight;
+  font-weight: bold;
+  &::before {
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    left: -12px;
+    content: "";
+    background-color: white;
+    box-sizing: border-box;
+    transition: .8s linear;
+  }
+  &:hover {
+    margin-left: 0;
+    &::before {
+      left: 154px;
+    }
+  }
+  &:active {
+    color: white;
+    background: $midnight;
+  }
+}

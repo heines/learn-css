@@ -167,7 +167,13 @@
   @import '../css/Object/Component/_btn.scss';
   @import '../css/Object/Component/_flexbox.scss';
   @import '../css/Object/Project/_btn.scss';
+  @import '../css/Object/Project/_btn-middle.scss';
+  @import '../css/Object/Project/_btn-bar-middle.scss';
+  @import '../css/Object/Project/_btn-shadow.scss';
+  @import '../css/Object/Project/_btn-shutter.scss';
   @import '../css/Object/Project/_btn-small.scss';
+  @import '../css/Object/Project/_btn-round.scss';
+  @import '../css/Object/Project/_btn-triangle.scss';
   @import '../css/Object/Project/_btn-cross-middle.scss';
   @import '../css/Object/Project/_btn-curtain.scss';
   @import '../css/Object/Project/_btn-blur.scss';
