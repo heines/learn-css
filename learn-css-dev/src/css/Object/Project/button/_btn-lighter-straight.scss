@@ -1,4 +1,4 @@
-.p-btn-lighter {
+.p-btn-lighter-straight {
   width: 150px;
   height: 50px;
   position: relative;
@@ -7,23 +7,22 @@
   font-weight: bold;
   overflow: hidden;
   &::after {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    left: -80px;
-    bottom: 40px;
+    left: 0;
+    top: 0;
     content: '';
-    border-radius: 50%;
-    background-color: rgba(white, 0.5);
-    transform: scale(1, 1);
+    background-color: rgba(white, 0.4);
+    transform: scale(0, 1);
     transition-property: transform;
-    transform-origin: left top;
+    transform-origin: left;
     transition-duration: .5s;
     transition-timing-function: ease-out;
   }
   &:hover {
     &::after {
-      transform: scale(4, 4);
+      transform: scale(1, 1);
     }
   }
 }
