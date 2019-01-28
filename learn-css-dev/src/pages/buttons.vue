@@ -102,6 +102,13 @@
       .c-flexbox
         a(href="").c-btn.p-btn-lid
           |蓋が開く
+        a(href="").c-btn.p-btn-ripple
+          |波紋
+        a(href="").c-btn.p-btn-ripple.p-btn-ripple--fill
+          |波紋
+        a(href="").c-btn.p-btn-ripple.p-btn-ripple--double
+          |波紋
+      .c-flexbox
         a(href="").c-btn.p-btn-cat-ears
           |猫耳
         .p-btn-bear
