@@ -36,6 +36,8 @@
       .c-flexbox
         a.c-btn.p-btn-gradation(href='')
           |gradation
+        a.c-btn.p-btn-float-shadow(href='')
+          |shadow
       .c-flexbox
         a(href="").c-btn.p-btn-line-extend
           |線を引く1。文章は長めの方がいいか
