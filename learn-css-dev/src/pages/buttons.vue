@@ -34,6 +34,9 @@
           span.p-btn-fill-sring__text
             |testtest
       .c-flexbox
+        a.c-btn.p-btn-gradation(href='')
+          |gradation
+      .c-flexbox
         a(href="").c-btn.p-btn-line-extend
           |線を引く1。文章は長めの方がいいか
         a(href="").c-btn.p-btn-line-extend.p-btn-line-extend--center
