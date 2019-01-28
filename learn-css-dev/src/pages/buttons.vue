@@ -36,6 +36,8 @@
       .c-flexbox
         a.c-btn.p-btn-gradation(href='')
           |gradation
+        a.c-btn.p-btn-radiate(href='')
+          |radiate
         a.c-btn.p-btn-float-shadow(href='')
           |shadow
       .c-flexbox
