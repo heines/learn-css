@@ -1,0 +1,29 @@
+.p-btn-lighter {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  background-color: #3bf;
+  color: #fff;
+  font-weight: bold;
+  overflow: hidden;
+  &::after {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: -80px;
+    bottom: 40px;
+    content: '';
+    border-radius: 50%;
+    background-color: rgba(white, 0.5);
+    transform: scale(1, 1);
+    transition-property: transform;
+    transform-origin: left top;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+  }
+  &:hover {
+    &::after {
+      transform: scale(4, 4);
+    }
+  }
+}

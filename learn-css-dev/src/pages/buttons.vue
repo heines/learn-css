@@ -41,6 +41,9 @@
         a.c-btn.p-btn-float-shadow(href='')
           |shadow
       .c-flexbox
+        a.c-btn.p-btn-lighter(href='')
+          |round light
+      .c-flexbox
         a(href="").c-btn.p-btn-line-extend
           |線を引く1。文章は長めの方がいいか
         a(href="").c-btn.p-btn-line-extend.p-btn-line-extend--center
