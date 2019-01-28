@@ -30,7 +30,9 @@
         a.c-btn.p-btn-blur(href='' tags='entrance') sky
           .p-btn-blur__bg1
           .p-btn-blur__bg2
-        a.c-btn.p-btn-fill(href='#' data-text='testtest') testtest
+        a.c-btn.p-btn-fill-sring(href='#' data-text='testtest')
+          span.p-btn-fill-sring__text
+            |testtest
       .c-flexbox
         a(href="").c-btn.p-btn-line-extend
           |線を引く1。文章は長めの方がいいか
