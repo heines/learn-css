@@ -34,18 +34,6 @@
           span.p-btn-fill-sring__text
             |testtest
       .c-flexbox
-        a.c-btn.p-btn-gradation(href='')
-          |gradation
-        a.c-btn.p-btn-radiate(href='')
-          |radiate
-        a.c-btn.p-btn-float-shadow(href='')
-          |shadow
-      .c-flexbox
-        a.c-btn.p-btn-lighter-round(href='')
-          |round light
-        a.c-btn.p-btn-lighter-straight(href='')
-          |straight light
-      .c-flexbox
         a(href="").c-btn.p-btn-line-extend
           |線を引く1。文章は長めの方がいいか
         a(href="").c-btn.p-btn-line-extend.p-btn-line-extend--center
@@ -116,13 +104,6 @@
       .c-flexbox
         a(href="").c-btn.p-btn-lid
           |蓋が開く
-        a(href="").c-btn.p-btn-ripple
-          |波紋
-        a(href="").c-btn.p-btn-ripple.p-btn-ripple--fill
-          |波紋
-        a(href="").c-btn.p-btn-ripple.p-btn-ripple--double
-          |波紋
-      .c-flexbox
         a(href="").c-btn.p-btn-cat-ears
           |猫耳
         .p-btn-bear
@@ -130,6 +111,13 @@
           .p-btn-bear__ears-right
           a(href="").c-btn.p-btn-bear__btn
             |くま耳
+      .c-flexbox
+        a(href="").c-btn.p-btn-ripple
+          |波紋
+        a(href="").c-btn.p-btn-ripple.p-btn-ripple--fill
+          |波紋
+        a(href="").c-btn.p-btn-ripple.p-btn-ripple--double
+          |波紋
       .c-flexbox
         a(href=''
           @mouseover="isOver"
@@ -139,6 +127,27 @@
           |hover
         a(href='').c-btn.p-btn-oct-rotate
           |hover
+      .c-flexbox
+        a.c-btn.p-btn-brackets(href='')
+          .p-btn-brackets__text
+            |かっこ
+        a.c-btn.p-btn-brackets-jp(href='')
+          .p-btn-brackets-jp__open
+          .p-btn-brackets-jp__close
+          .p-btn-brackets-jp__text
+            |かっこ
+      .c-flexbox
+        a.c-btn.p-btn-gradation(href='')
+          |gradation
+        a.c-btn.p-btn-radiate(href='')
+          |radiate
+        a.c-btn.p-btn-float-shadow(href='')
+          |shadow
+      .c-flexbox
+        a.c-btn.p-btn-lighter-round(href='')
+          |round light
+        a.c-btn.p-btn-lighter-straight(href='')
+          |straight light
       .c-flexbox
         a(href='mailto:test@test.com').c-btn.p-btn-mail
           |mail

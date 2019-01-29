@@ -1,0 +1,33 @@
+.p-btn-brackets {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 3px #ddd;
+  box-sizing: border-box;
+  z-index: 1;
+  &::after {
+    width: calc(100% - 16px);
+    height: 120%;
+    position: absolute;
+    left: 50%;
+    content: '';
+    z-index: 5;
+    background-color: #fff;
+    transform: translateX(-50%) scale(1, 1);
+    transition-property: transform;
+    transition-delay: .1s;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+  }
+  &__text {
+    color: #ccc;
+    text-shadow: 0 0 3px #ddd;
+    z-index: 10;
+  }
+  &:hover {
+    &::after {
+      transform: translateX(-50%) scale(0, 1);
+    }
+  }
+}

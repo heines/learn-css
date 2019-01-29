@@ -1,0 +1,67 @@
+.p-btn-brackets-jp {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  z-index: 1;
+  &__open, &__close {
+    width: 100%;
+    height: 100%;;
+    position: absolute;
+    content: '';
+    &::before, &::after {
+      position: absolute;
+      content: '';
+      background-color: #ccc;
+      box-shadow: 0 0 3px #ddd;
+      transition-property: transform;
+      transition-duration: 1s;
+      transition-timing-function: ease;
+    }
+    &::before {
+      width: 1px;
+      height: 100%;
+      transform: scale(1, 0.4);
+    }
+    &::after {
+      width: 100%;
+      height: 1px;
+      transform: scale(0.07, 1);
+    }
+  }
+  &__open {
+    &::before, &::after {
+      top: 0;
+      left: 0;
+    }
+    &::before {
+      transform-origin: top;
+    }
+    &::after {
+      transform-origin: left;
+    }
+  }
+  &__close {
+    &::before, &::after {
+      right: 0;
+      bottom: 0;
+    }
+    &::before {
+      transform-origin: bottom;
+    }
+    &::after {
+      transform-origin: right;
+    }
+  }
+  &__text {
+    color: #ccc;
+    text-shadow: 0 0 3px #ddd;
+    z-index: 10;
+  }
+  &:hover &{
+    &__open, &__close {
+      &::before, &::after {
+        transform: scale(1, 1);
+      }
+    }
+  }
+}
