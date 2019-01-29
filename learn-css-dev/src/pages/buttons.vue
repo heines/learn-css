@@ -34,6 +34,30 @@
           span.p-btn-fill-sring__text
             |testtest
       .c-flexbox
+        a.c-btn.p-btn-biscuit(href='')
+          |オレオ
+          br
+          |食べたい
+        a.c-btn.p-btn-cookie(href='')
+          |クッキー
+        .p-btn-bite__outer
+          a.c-btn.p-btn-bite(href='https://heines.github.io/learn-css/')
+            |はらへ
+      .c-flexbox
+        .p-image-box
+          .p-image-box__line
+            .p-image-box__img
+              img(src='../assets/pakutaso001.jpg')
+            p.p-image-box__text Photo by pakutaso
+      .c-flexbox
+        a.c-btn.p-btn-bgimage(href="https://heines.github.io/learn-css/" texts="pakutaso")
+        a.c-btn.p-btn-tag-image(href="https://heines.github.io/learn-css/")
+          |擬似要素に画像を追加
+        lineShare
+      .c-flexbox
+        a(href="").c-btn.p-btn-slide-image
+        a(href="").c-btn.p-btn-stretch-image
+      .c-flexbox
         a(href="").c-btn.p-btn-line-extend
           |線を引く1。文章は長めの方がいいか
         a(href="").c-btn.p-btn-line-extend.p-btn-line-extend--center
@@ -79,9 +103,7 @@
         a(href="").c-btn.p-btn-slidein-string
           p.p-btn-slidein-string__text
             |slide in
-      .c-flexbox
-        a(href="").c-btn.p-btn-slide-image
-        a(href="").c-btn.p-btn-stretch-image
+
       .c-flexbox
         a(href="").c-btn.p-btn-square
           .p-btn-square__line1
@@ -160,40 +182,16 @@
           .p-btn-send__good
           |send
       .c-flexbox
-        .p-image-box
-          .p-image-box__line
-            .p-image-box__img
-              img(src='../assets/pakutaso001.jpg')
-            p.p-image-box__text Photo by pakutaso
-      .c-flexbox
-        a.c-btn.p-btn-bgimage(href="https://heines.github.io/learn-css/" texts="pakutaso")
-        a.c-btn.p-btn-tag-image(href="https://heines.github.io/learn-css/")
-          |擬似要素に画像を追加
-        lineShare
-      .c-flexbox
-        a.c-btn.p-btn-biscuit(href='')
-          |オレオ
-          br
-          |食べたい
-        a.c-btn.p-btn-cookie(href='')
-          |クッキー
-        .p-btn-bite__outer
-          a.c-btn.p-btn-bite(href='https://heines.github.io/learn-css/')
-            |はらへ
-      .c-flexbox
-        .c-scroll-arrow
-          .c-scroll-arrow__box1
-          .c-scroll-arrow__box2
-          .c-scroll-arrow__box3
-          .c-scroll-arrow__up
-            .c-scroll-arrow__box1
-            .c-scroll-arrow__box1
-            .c-scroll-arrow__box1
-          .c-scroll-arrow__down
-            .c-scroll-arrow__box2
-            .c-scroll-arrow__box2
-            .c-scroll-arrow__box2
-          .c-scroll-arrow__box3
+        .p-btn-list
+          .p-btn-list__main
+            p.p-btn-list__text
+              |select
+          .p-btn-list__content1
+            |1
+          .p-btn-list__content2
+            |2
+          .p-btn-list__content3
+            |3
 </template>
 
 <script>
@@ -226,28 +224,5 @@
 </script>
 
 <style lang="scss" scoped>
-  @import '../css/_main.scss';
-  .c-scroll-arrow {
-    width: 50px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &__box1, &__box2, &__box3 {
-      width: 5px;
-      height: 5px;
-      margin-bottom: 1px;
-      background-color: blue;
-    }
-    &__up {
-      width: 30px;
-      display: flex;
-      justify-content: space-around;
-    }
-    &__down {
-      width: 21px;
-      display: flex;
-      justify-content: space-around;
-    }
-  }
+@import '../css/_main.scss';
 </style>

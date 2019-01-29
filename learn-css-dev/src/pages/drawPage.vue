@@ -1,5 +1,19 @@
 <template lang="pug">
   div
+    .c-flexbox
+      .c-scroll-arrow
+        .c-scroll-arrow__box1
+        .c-scroll-arrow__box2
+        .c-scroll-arrow__box3
+        .c-scroll-arrow__up
+          .c-scroll-arrow__box1
+          .c-scroll-arrow__box1
+          .c-scroll-arrow__box1
+        .c-scroll-arrow__down
+          .c-scroll-arrow__box2
+          .c-scroll-arrow__box2
+          .c-scroll-arrow__box2
+        .c-scroll-arrow__box3
     .p-slide-show
       .p-slide-show__image1
       .p-slide-show__image2
@@ -52,5 +66,28 @@
   @import '../css/_main.scss';
   h1, h2 {
     font-weight: normal;
+  }
+  .c-scroll-arrow {
+    width: 50px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__box1, &__box2, &__box3 {
+      width: 5px;
+      height: 5px;
+      margin-bottom: 1px;
+      background-color: blue;
+    }
+    &__up {
+      width: 30px;
+      display: flex;
+      justify-content: space-around;
+    }
+    &__down {
+      width: 21px;
+      display: flex;
+      justify-content: space-around;
+    }
   }
 </style>
