@@ -186,15 +186,18 @@
           |think
         a(href='').c-btn.p-btn-room-light
           |電気
-      .c-flexboxs
+      .c-flexbox
         a(href='').c-btn.p-btn-capsize
           |ぐるーん
         a(href='').c-btn.p-btn-bar-spin
+      .c-flexbox
         a(href='').c-btn.p-btn-reverse
           .p-btn-reverse__front
             |front
           .p-btn-reverse__back
             |back
+        a(href='').c-btn.p-btn-flown
+          |飛んでった
       .c-flexbox
         .p-btn-list
           .p-btn-list__main
