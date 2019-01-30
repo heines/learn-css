@@ -51,6 +51,10 @@
             |眠い
           .p-clapperboard__date
             |Jan.29th.2019
+      .p-scissors
+        .p-scissors
+          .p-scissors__blade-1
+          .p-scissors__blade-2
 </template>
 
 <script>
