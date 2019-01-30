@@ -1,0 +1,53 @@
+.p-btn-room-light{
+  width: 150px;
+  height: 50px;
+  position: relative;
+  margin-bottom: 50px;
+  border: 2px solid #222;
+  box-sizing: border-box;
+  color: #333;
+  font-weight: bold;
+  background-color: #fff;
+  transition-property: background-color;
+  transition-delay: .2s;
+  transition-duration: .4s;
+  transition-timing-function: ease;
+  &::before {
+    width: 1px;
+    height: 30px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    content: '';
+    background-color: #222;
+    transform: translateX(-50%) scale(1, 1);
+    transform-origin: top;
+    transition-property: transform;
+    transition-duration: .4s;
+    transition-timing-function: ease;
+  }
+  &::after {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    border: 2px solid #222;
+    box-sizing: border-box;
+    transform: translate3d(-50%, 40px, 0);
+    border-radius: 50%;
+    transition-property: transform;
+    transition-duration: .4s;
+    transition-timing-function: ease;
+  }
+  &:hover {
+    background-color: #FFCC33;
+    &::before {
+      transform: translateX(-50%) scale(1, 1.37);
+    }
+    &::after {
+      transform: translate3d(-50%, 50px, 0);
+    }
+  }
+}

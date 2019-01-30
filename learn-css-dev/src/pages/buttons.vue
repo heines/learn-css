@@ -184,6 +184,8 @@
       .c-flexbox
         a(href='').c-btn.p-btn-light-bulb
           |think
+        a(href='').c-btn.p-btn-room-light
+          |電気
       .c-flexbox
         .p-btn-list
           .p-btn-list__main
