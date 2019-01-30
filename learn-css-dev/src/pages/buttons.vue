@@ -198,6 +198,8 @@
             |back
         a(href='').c-btn.p-btn-flown
           |飛んでった
+        a(href='').c-btn.p-btn-flown.p-btn-flown--reverse
+          |飛んできた
       .c-flexbox
         .p-btn-list
           .p-btn-list__main

@@ -25,6 +25,21 @@
       animation-iteration-count: 1;
     }
   }
+  &--reverse {
+    &::before {
+      opacity: 0;
+    }
+    &:hover {
+      &::before {
+        animation-name: flown;
+        animation-duration: .5s;
+        animation-direction: reverse;
+        animation-fill-mode: both;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+      }
+    }
+  }
 }
 
 @keyframes flown {
