@@ -1,0 +1,28 @@
+.p-btn-capsize {
+  width: 150px;
+  height: 50px;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  border: 2px solid #ddd;
+  box-sizing: border-box;
+  color: #aaa;
+  font-weight: bold;
+  transform-origin: center;
+  transition-property: transform;
+  transition-duration: .3s;
+  transition-timing-function: ease;
+  &:hover {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes capsize {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
