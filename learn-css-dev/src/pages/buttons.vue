@@ -182,6 +182,9 @@
           .p-btn-send__good
           |send
       .c-flexbox
+        a(href='').c-btn.p-btn-light-bulb
+          |think
+      .c-flexbox
         .p-btn-list
           .p-btn-list__main
             p.p-btn-list__text

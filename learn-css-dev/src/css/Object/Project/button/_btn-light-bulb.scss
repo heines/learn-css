@@ -1,0 +1,55 @@
+.p-btn-light-bulb {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  margin-top: 50px;
+  color: #757575;
+  font-weight: bold;
+  border: 3px solid #eee;
+  box-sizing: border-box;
+  transition-property: color;
+  transition-duration: .5s;
+  transition-timing-function: ease;
+  &::before {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    content: '';
+    transform: translate3d(-50%, -10px, 0);
+    background: radial-gradient(#FFCC33, transparent, transparent);
+    opacity: 0;
+    transition-delay: .05s;
+    transition-property: opacity;
+    transition-duration: .05s;
+    transition-timing-function: ease-out;
+  }
+  &::after {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    content: '';
+    transform: translate3d(-50%, 10px, 0);
+    background-image: url('../assets/lightBulb.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: .1s;
+    transition-timing-function: ease-out;
+  }
+  &:hover {
+    color: #FFCC33;
+    &::before {
+      opacity: 1;
+    }
+    &::after {
+      opacity: 1;
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+}
