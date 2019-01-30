@@ -186,9 +186,10 @@
           |think
         a(href='').c-btn.p-btn-room-light
           |電気
-      .c-flexbox
+      .c-flexboxs
         a(href='').c-btn.p-btn-capsize
           |ぐるーん
+        a(href='').c-btn.p-btn-bar-spin
       .c-flexbox
         .p-btn-list
           .p-btn-list__main

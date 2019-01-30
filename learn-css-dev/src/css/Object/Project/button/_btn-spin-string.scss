@@ -11,9 +11,9 @@
     @for $i from 0 through 6 {
       &-char#{$i} {
         @if $i == 0 {
-          animation-name: spin
+          animation-name: spinY;
         } @else {
-          animation-name: spin,fadeIn;
+          animation-name: spinY,fadeIn;
           animation-delay: #{$i * 0.1 + 0.1}s;
         }
         animation-duration: .8s;
@@ -33,7 +33,7 @@
   }
 }
 
-@keyframes spin {
+@keyframes spinY {
   0% {
     transform: rotateY(0deg);
   }

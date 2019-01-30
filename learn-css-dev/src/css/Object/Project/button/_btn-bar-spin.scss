@@ -1,0 +1,48 @@
+.p-btn-bar-spin {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: relative;
+  &::before {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    content: '';
+    background-color: #ccc;
+    box-shadow: 0 0 10px #ddd;
+    transform: rotate(0);
+  }
+  &::after {
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: '';
+    background-color: #ccc;
+    box-shadow: 0 0 10px #ddd;
+    transform: rotate(0);
+  }
+  &:hover {
+    &::before, &::after {
+      animation-name: spinX;
+      animation-duration: .3s;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+}
+
+@keyframes spinX {
+  0% {
+    transform: rotate(0);
+    transform-origin: center;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}

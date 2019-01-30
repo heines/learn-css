@@ -7,14 +7,14 @@
   border: $midnight 1px solid;
   border-radius: 50%;
   &:hover {
-    animation-name: spin;
+    animation-name: spinY;
     animation-duration: .8s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
   }
 }
 
-@keyframes spin {
+@keyframes spinY {
   0% {
     transform: rotateY(0deg);
   }

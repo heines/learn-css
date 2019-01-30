@@ -1,9 +1,11 @@
 .p-btn-capsize {
   width: 150px;
   height: 50px;
-  display: block;
+  display: inline-block;
   margin-top: 50px;
   margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
   padding-top: 10px;
   border: 2px solid #ddd;
   box-sizing: border-box;
