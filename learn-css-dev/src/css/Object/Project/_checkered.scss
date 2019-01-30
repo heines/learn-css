@@ -1,0 +1,8 @@
+.p-checkered {
+  width: 200px;
+  height: 200px;
+  background-color: #aaa;
+  background-image: linear-gradient(45deg, #ddd 25%, transparent 25%, transparent 75%, #ddd 75%, #ddd), linear-gradient(45deg, #ddd 25%, transparent 25%, transparent 75%, #ddd 75%, #ddd);
+  background-position: 0 0, 25px 25px;
+  background-size: 50px 50px;
+}

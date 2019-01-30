@@ -55,6 +55,9 @@
         .p-scissors
           .p-scissors__blade-1
           .p-scissors__blade-2
+    .c-flexbox
+      .p-checkered
+      .p-stripe
 </template>
 
 <script>
