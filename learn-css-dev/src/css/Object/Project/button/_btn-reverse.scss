@@ -1,0 +1,34 @@
+.p-btn-reverse {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  transform: rotateY(0);
+  transition-property: transform;
+  transition-delay: .2s;
+  transition-duration: .5s;
+  transition-timing-function: ease;
+  transform-style: preserve-3d;
+  &__front, &__back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    padding: 10px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    font-weight: bold;
+    color: #fff;
+  }
+  &__front{
+    background-image: url('../assets/pakutaso001.jpg');
+    background-size: cover;
+  }
+  &__back {
+    background-image: url('../assets/pakutaso002.jpg');
+    background-size: cover;
+    transform: rotateY(180deg);
+  }
+  &:hover {
+    transform: rotateY(180deg);
+  }
+}

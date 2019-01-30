@@ -190,6 +190,11 @@
         a(href='').c-btn.p-btn-capsize
           |ぐるーん
         a(href='').c-btn.p-btn-bar-spin
+        a(href='').c-btn.p-btn-reverse
+          .p-btn-reverse__front
+            |front
+          .p-btn-reverse__back
+            |back
       .c-flexbox
         .p-btn-list
           .p-btn-list__main
