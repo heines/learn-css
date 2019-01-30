@@ -1,19 +1,19 @@
 <template lang="pug">
   div
-    .c-flexbox
-      .c-scroll-arrow
-        .c-scroll-arrow__box1
-        .c-scroll-arrow__box2
-        .c-scroll-arrow__box3
-        .c-scroll-arrow__up
-          .c-scroll-arrow__box1
-          .c-scroll-arrow__box1
-          .c-scroll-arrow__box1
-        .c-scroll-arrow__down
-          .c-scroll-arrow__box2
-          .c-scroll-arrow__box2
-          .c-scroll-arrow__box2
-        .c-scroll-arrow__box3
+    //- .c-flexbox
+    //-   .c-scroll-arrow
+    //-     .c-scroll-arrow__box1
+    //-     .c-scroll-arrow__box2
+    //-     .c-scroll-arrow__box3
+    //-     .c-scroll-arrow__up
+    //-       .c-scroll-arrow__box1
+    //-       .c-scroll-arrow__box1
+    //-       .c-scroll-arrow__box1
+    //-     .c-scroll-arrow__down
+    //-       .c-scroll-arrow__box2
+    //-       .c-scroll-arrow__box2
+    //-       .c-scroll-arrow__box2
+    //-     .c-scroll-arrow__box3
     .p-slide-show
       .p-slide-show__image1
       .p-slide-show__image2
@@ -58,6 +58,9 @@
     .c-flexbox
       .p-checkered
       .p-stripe
+    .c-flexbox
+      .p-come-back
+        |おすすめメニュー
 </template>
 
 <script>

@@ -1,0 +1,63 @@
+.p-come-back {
+  width: 320px;
+  height: 40px;
+  position: relative;
+  margin-top: 50px;
+  padding-top: 2px;
+  box-sizing: border-box;
+  border-top: 1px solid #ddd;
+  color: #888;
+  font-size: 1.5em;
+  &::before {
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    content: '';
+    background-color: rgb(223, 86, 86);
+  }
+  &::after {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: -40px;
+    content: '';
+    background-image: url('../assets/scooter.svg');
+    background-size: contain;
+  }
+  &:hover {
+    &::after {
+      animation-name: comeBackObject;
+      animation-duration: 3s;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+      animation-delay: .2s;
+      animation-iteration-count: 1;
+    }
+  }
+}
+
+@keyframes comeBackObject {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translateX(300px);
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(320px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
