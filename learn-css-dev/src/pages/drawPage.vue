@@ -43,6 +43,14 @@
     .c-flexbox
       p.p-box-shadow-solid(text="文字列に立体的な影がつく（1行のみ）")
         |文字列に立体的な影がつく（1行のみ）
+    .c-flexbox
+      .p-clapperboard
+        .p-clapperboard__clapper
+        .p-clapperboard__board
+          .p-clapperboard__prodtitle
+            |眠い
+          .p-clapperboard__date
+            |Jan.29th.2019
 </template>
 
 <script>
