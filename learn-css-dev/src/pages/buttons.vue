@@ -224,6 +224,9 @@
           .p-btn-tile__3
           .p-btn-tile__4
       .c-flexbox
+        a(href='').c-btn.p-btn-flashing
+          |明滅する
+      .c-flexbox
         .p-btn-list
           .p-btn-list__main
             p.p-btn-list__text
