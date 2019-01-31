@@ -210,6 +210,13 @@
       .c-flexbox
         a(href='').c-btn.p-btn-turned-up
           |めくれる
+        a(href='').c-btn.p-btn-reopen-book
+          .p-btn-reopen-book__front
+            |表紙
+          .p-btn-reopen-book__default
+            |常に見えているページ
+          .p-btn-reopen-book__next
+            |hoverすると見える
       .c-flexbox
         .p-btn-list
           .p-btn-list__main
