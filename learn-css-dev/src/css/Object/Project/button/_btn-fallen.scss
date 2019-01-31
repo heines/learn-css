@@ -1,0 +1,19 @@
+.p-btn-fallen {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  margin-bottom: 50px;
+  border: 2px solid $midnight;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: $midnight;
+  font-weight: bold;
+  transform-origin: left bottom;
+  transition-property: transform;
+  transition-delay: .2s;
+  transition-duration: .2s;
+  transition-timing-function: ease-out;
+  &:hover {
+    transform: rotate(5deg);
+  }
+}

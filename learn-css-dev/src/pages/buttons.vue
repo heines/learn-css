@@ -201,6 +201,9 @@
         a(href='').c-btn.p-btn-flown.p-btn-flown--reverse
           |飛んできた
       .c-flexbox
+        a(href='').c-btn.p-btn-fallen
+          |落ちる
+      .c-flexbox
         .p-btn-list
           .p-btn-list__main
             p.p-btn-list__text
