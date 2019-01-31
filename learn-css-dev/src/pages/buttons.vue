@@ -205,6 +205,8 @@
           |落ちる
         a(href='').c-btn.p-btn-snap
           |折れる
+        a(href='').c-btn.p-btn-doors
+          |開く
       .c-flexbox
         .p-btn-list
           .p-btn-list__main
