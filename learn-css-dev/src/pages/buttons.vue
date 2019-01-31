@@ -217,6 +217,12 @@
             |常に見えているページ
           .p-btn-reopen-book__next
             |hoverすると見える
+        a(href='').c-btn.p-btn-tile
+          |も
+          .p-btn-tile__1
+          .p-btn-tile__2
+          .p-btn-tile__3
+          .p-btn-tile__4
       .c-flexbox
         .p-btn-list
           .p-btn-list__main
