@@ -87,6 +87,10 @@
     .c-flexbox
       .p-come-back
         |おすすめメニュー
+      .p-rain
+        .p-rain__cloud
+        .p-rain__drop
+        .p-rain__surface
 </template>
 
 <script>
