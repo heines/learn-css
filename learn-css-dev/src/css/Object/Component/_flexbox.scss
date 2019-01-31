@@ -4,4 +4,8 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 30px auto;
+  &--black {
+    padding: 20px;
+    background-color: #000;
+  }
 }

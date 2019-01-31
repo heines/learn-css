@@ -223,9 +223,12 @@
           .p-btn-tile__2
           .p-btn-tile__3
           .p-btn-tile__4
-      .c-flexbox
+      .c-flexbox.c-flexbox--black
         a(href='').c-btn.p-btn-flashing
           |明滅する
+        a(href='').c-btn.p-btn-exit
+          .p-btn-exit__mark
+          .p-btn-exit__outdoors
       .c-flexbox
         .p-btn-list
           .p-btn-list__main

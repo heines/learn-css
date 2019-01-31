@@ -1,0 +1,52 @@
+.p-btn-exit {
+  width: 100px;
+  height: 150px;
+  position: relative;
+  background-color: #222;
+  &__mark {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: calc(50% - 15px);
+    top: 10px;
+    content: 0;
+    background-image: url('../assets/exitMan.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-color: #ddd;
+    box-shadow: 0 0 5px #fff;
+    border-top: 5px solid rgb(48, 211, 77);
+    border-left: 5px solid rgb(48, 211, 77);
+    border-right: 5px solid rgb(48, 211, 77);
+    box-sizing: border-box;
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-duration: .7s;
+    transition-timing-function: ease-in-out;
+  }
+  &__outdoors {
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: 0;
+    background-color: #fff;
+    transform: scale(0, 1);
+    transform-origin: right;
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-duration: .7s;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0 0 20px #fffae0;
+  }
+  &:hover &{
+    &__mark {
+      transform: translateX(-30px);
+    }
+    &__outdoors {
+      transform: scale(1, 1);
+    }
+  }
+}
