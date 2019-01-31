@@ -203,6 +203,8 @@
       .c-flexbox
         a(href='').c-btn.p-btn-fallen
           |落ちる
+        a(href='').c-btn.p-btn-snap
+          |折れる
       .c-flexbox
         .p-btn-list
           .p-btn-list__main
