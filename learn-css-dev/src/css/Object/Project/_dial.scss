@@ -1,0 +1,30 @@
+.p-dial {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 3px #ddd;
+  @for $i from 1 through 12 {
+    &__#{$i} {
+      $sdeg : sin((360deg / 12 * $i) - 90deg);
+      $cdeg : cos((360deg / 12 * $i) - 90deg);
+      position: absolute;
+      top: calc(#{$sdeg} * 90px + 90px);
+      left: calc(#{$cdeg} * 90px + 95px);
+      content: '';
+      transform: rotate( 360deg / 12 * $i);
+      color: #888;
+    }
+  }
+  &__center {
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: calc(50% - 2px);
+    content: '';
+    border-radius: 50px;
+    background-color: #222;
+  }
+}

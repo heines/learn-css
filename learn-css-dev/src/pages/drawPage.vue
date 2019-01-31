@@ -58,6 +58,32 @@
     .c-flexbox
       .p-checkered
       .p-stripe
+      .p-dial
+        .p-dial__center
+        .p-dial__12
+          |12
+        .p-dial__1
+          |1
+        .p-dial__2
+          |2
+        .p-dial__3
+          |3
+        .p-dial__4
+          |4
+        .p-dial__5
+          |5
+        .p-dial__6
+          |6
+        .p-dial__7
+          |7
+        .p-dial__8
+          |8
+        .p-dial__9
+          |9
+        .p-dial__10
+          |10
+        .p-dial__11
+          |11
     .c-flexbox
       .p-come-back
         |おすすめメニュー
