@@ -1,0 +1,21 @@
+.p-btn-turned-up {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  background: #fff9e7;
+  box-shadow: inset 0 0 15px rgba(230,220,190,1);
+  color: #888;
+  &::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-width: 0 15px 15px 0;
+    border-style: solid;
+    width: 0;
+    transform: rotate(90deg);
+    background: #e8ddbd;
+    border-color: #fff #fff #e8ddbd #e8ddbd;
+  }
+}

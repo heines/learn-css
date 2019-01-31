@@ -208,6 +208,9 @@
         a(href='').c-btn.p-btn-doors
           |開く
       .c-flexbox
+        a(href='').c-btn.p-btn-turned-up
+          |めくれる
+      .c-flexbox
         .p-btn-list
           .p-btn-list__main
             p.p-btn-list__text
